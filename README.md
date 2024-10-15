@@ -1,4 +1,4 @@
-# aspire_with_alina
+# AspireWithAlina
 
 A new Flutter project.
 
