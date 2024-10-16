@@ -18,7 +18,7 @@
   },
   "common_errorTitle": "Fehler",
   "@common_errorTitle": {
-    "description": "Das Wort \"Fehler\", das als Titel für Fehlermeldungen verwendet wird."
+    "description": "Das Wort „Fehler“, das als Titel für Fehlermeldungen verwendet wird."
   },
   "common_firstName": "Vorname",
   "@common_firstName": {
@@ -34,11 +34,15 @@
   },
   "common_okayTitle": "Okay",
   "@common_okayTitle": {
-    "description": "Das Wort \"Okay\", das als Schaltflächenbeschriftung verwendet wird."
+    "description": "Das Wort „Okay“, das als Schaltflächenbeschriftung verwendet wird."
+  },
+  "common_settingsTitle": "Einstellungen",
+  "@common_settingsTitle": {
+    "description": "Das Wort „Einstellungen“, das als Titel für den Einstellungsbildschirm verwendet wird."
   },
   "common_submit": "Senden",
   "@common_submit": {
-    "description": "Das Wort \"Senden\", das als Schaltflächenbeschriftung verwendet wird."
+    "description": "Das Wort „Senden“, das als Schaltflächenbeschriftung verwendet wird."
   },
   "registrationCodeError": "Es ist ein Fehler aufgetreten. Bitte überprüfen Sie Ihre Verbindung.",
   "@registrationCodeError": {
@@ -67,6 +71,30 @@
   "registrationCodeSubmitButton": "Lasst uns beginnen!",
   "@registrationCodeSubmitButton": {
     "description": "Die Beschriftung für die Schaltfläche zum Senden des Registrierungscodes."
+  },
+  "settings_darkTheme": "Dunkles Design",
+  "@settings_darkTheme": {
+    "description": "Die Bezeichnung für die dunkle Designeinstellung."
+  },
+  "settings_lightTheme": "Lichtthema",
+  "@settings_lightTheme": {
+    "description": "Die Bezeichnung für die Einstellung des hellen Designs."
+  },
+  "settings_systemTheme": "Systemthema",
+  "@settings_systemTheme": {
+    "description": "Die Bezeichnung für die Systemdesigneinstellung."
+  },
+  "studentInfoForm_emptyEmail": "Bitte geben Sie Ihre E-Mail-Adresse an.",
+  "@studentInfoForm_emptyEmail": {
+    "description": "Die Fehlermeldung, die angezeigt wird, wenn die E-Mail-Adresse leer ist."
+  },
+  "studentInfoForm_emptyFirstName": "Bitte geben Sie Ihren Vornamen ein.",
+  "@studentInfoForm_emptyFirstName": {
+    "description": "Die Fehlermeldung, die angezeigt wird, wenn das Vornamensfeld leer ist."
+  },
+  "studentInfoForm_emptyLastName": "Bitte geben Sie Ihren Nachnamen an.",
+  "@studentInfoForm_emptyLastName": {
+    "description": "Die Fehlermeldung, die angezeigt wird, wenn das Feld für den Nachnamen leer ist."
   },
   "welcomeStudent": "Willkommen, {firstName}!",
   "@welcomeStudent": {

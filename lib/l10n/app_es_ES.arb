@@ -36,6 +36,10 @@
   "@common_okayTitle": {
     "description": "La palabra \"Ok\" que se utiliza como etiqueta de botón."
   },
+  "common_settingsTitle": "Configuración",
+  "@common_settingsTitle": {
+    "description": "La palabra \"Configuración\" que se utiliza como título de la pantalla de configuración."
+  },
   "common_submit": "Enviar",
   "@common_submit": {
     "description": "La palabra \"Enviar\" que se utiliza como etiqueta de botón."
@@ -67,6 +71,30 @@
   "registrationCodeSubmitButton": "¡Empecemos!",
   "@registrationCodeSubmitButton": {
     "description": "La etiqueta para el botón de envío del código de registro."
+  },
+  "settings_darkTheme": "Tema oscuro",
+  "@settings_darkTheme": {
+    "description": "La etiqueta para la configuración del tema oscuro."
+  },
+  "settings_lightTheme": "Tema claro",
+  "@settings_lightTheme": {
+    "description": "La etiqueta para la configuración del tema de luz."
+  },
+  "settings_systemTheme": "Tema del sistema",
+  "@settings_systemTheme": {
+    "description": "La etiqueta para la configuración del tema del sistema."
+  },
+  "studentInfoForm_emptyEmail": "Por favor, introduzca su dirección de correo electrónico.",
+  "@studentInfoForm_emptyEmail": {
+    "description": "El mensaje de error que se muestra cuando la dirección de correo electrónico está vacía."
+  },
+  "studentInfoForm_emptyFirstName": "Por favor, introduzca su nombre.",
+  "@studentInfoForm_emptyFirstName": {
+    "description": "El mensaje de error que se muestra cuando el nombre está vacío."
+  },
+  "studentInfoForm_emptyLastName": "Por favor, introduzca su apellido.",
+  "@studentInfoForm_emptyLastName": {
+    "description": "El mensaje de error que se muestra cuando el apellido está vacío."
   },
   "welcomeStudent": "¡Bienvenido, {firstName}!",
   "@welcomeStudent": {

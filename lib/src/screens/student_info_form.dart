@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 
 class StudentInfoFormScreen extends StatefulWidget {
   const StudentInfoFormScreen({super.key});
@@ -72,12 +71,27 @@ class StudentInfoFormScreenState extends State<StudentInfoFormScreen> {
       context: context,
       builder: (context) {
         return AlertDialog(
-          title: Text(AppLocalizations.of(context)!.common_errorTitle),
-          content: Text(message),
+          title: Text(
+            AppLocalizations.of(context)!.common_errorTitle,
+            style: const TextStyle(
+              fontFamily: 'Bauhaus',
+            ),
+          ),
+          content: Text(
+            message,
+            style: const TextStyle(
+              fontFamily: 'Bauhaus',
+            ),
+          ),
           actions: [
             TextButton(
               onPressed: () => Navigator.of(context).pop(),
-              child: Text(AppLocalizations.of(context)!.common_okayTitle),
+              child: Text(
+                AppLocalizations.of(context)!.common_okayTitle,
+                style: const TextStyle(
+                  fontFamily: 'Bauhaus',
+                ),
+              ),
             ),
           ],
         );
@@ -104,6 +118,7 @@ class StudentInfoFormScreenState extends State<StudentInfoFormScreen> {
                     color: Colors.white,
                     fontSize: 22,
                     fontWeight: FontWeight.bold,
+                    fontFamily: 'Bauhaus',
                   ),
                 ),
               ],
@@ -121,6 +136,7 @@ class StudentInfoFormScreenState extends State<StudentInfoFormScreen> {
                     style: const TextStyle(
                       fontSize: 32,
                       fontWeight: FontWeight.bold,
+                      fontFamily: 'Bauhaus',
                     ),
                   ),
                   const SizedBox(height: 24),
@@ -128,6 +144,9 @@ class StudentInfoFormScreenState extends State<StudentInfoFormScreen> {
                     controller: _firstNameController,
                     decoration: InputDecoration(
                       labelText: AppLocalizations.of(context)!.common_firstName,
+                      labelStyle: const TextStyle(
+                        fontFamily: 'Bauhaus',
+                      ),
                       border: const OutlineInputBorder(),
                     ),
                   ),
@@ -136,6 +155,9 @@ class StudentInfoFormScreenState extends State<StudentInfoFormScreen> {
                     controller: _lastNameController,
                     decoration: InputDecoration(
                       labelText: AppLocalizations.of(context)!.common_lastName,
+                      labelStyle: const TextStyle(
+                        fontFamily: 'Bauhaus',
+                      ),
                       border: const OutlineInputBorder(),
                     ),
                   ),
@@ -144,6 +166,9 @@ class StudentInfoFormScreenState extends State<StudentInfoFormScreen> {
                     controller: _emailController,
                     decoration: InputDecoration(
                       labelText: AppLocalizations.of(context)!.common_emailAddress,
+                      labelStyle: const TextStyle(
+                        fontFamily: 'Bauhaus',
+                      ),
                       border: const OutlineInputBorder(),
                     ),
                   ),
@@ -168,6 +193,7 @@ class StudentInfoFormScreenState extends State<StudentInfoFormScreen> {
                           style: const TextStyle(
                             color: Colors.white,
                             fontSize: 16.0,
+                            fontFamily: 'Bauhaus',
                           ),
                         ),
                     ),

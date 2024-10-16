@@ -36,6 +36,10 @@
   "@common_okayTitle": {
     "description": "Слово «ОК», используемое в качестве подписи к кнопке."
   },
+  "common_settingsTitle": "Настройки",
+  "@common_settingsTitle": {
+    "description": "Слово «Настройки», используемое в качестве заголовка экрана настроек."
+  },
   "common_submit": "Отправить",
   "@common_submit": {
     "description": "Слово «Отправить», используемое в качестве подписи кнопки."
@@ -67,6 +71,30 @@
   "registrationCodeSubmitButton": "Начнем!",
   "@registrationCodeSubmitButton": {
     "description": "Метка для кнопки отправки регистрационного кода."
+  },
+  "settings_darkTheme": "Темная тема",
+  "@settings_darkTheme": {
+    "description": "Метка для настройки тёмной темы."
+  },
+  "settings_lightTheme": "Светлая тема",
+  "@settings_lightTheme": {
+    "description": "Метка для настройки светлой темы."
+  },
+  "settings_systemTheme": "Системная тема",
+  "@settings_systemTheme": {
+    "description": "Метка настройки системной темы."
+  },
+  "studentInfoForm_emptyEmail": "Введите свой адрес электронной почты.",
+  "@studentInfoForm_emptyEmail": {
+    "description": "Сообщение об ошибке, отображаемое, если адрес электронной почты пуст."
+  },
+  "studentInfoForm_emptyFirstName": "Введите свое имя.",
+  "@studentInfoForm_emptyFirstName": {
+    "description": "Сообщение об ошибке, которое отображается, если имя пустое."
+  },
+  "studentInfoForm_emptyLastName": "Введите вашу фамилию.",
+  "@studentInfoForm_emptyLastName": {
+    "description": "Сообщение об ошибке, которое отображается, если фамилия не указана."
   },
   "welcomeStudent": "Добро пожаловать, {firstName}!",
   "@welcomeStudent": {

@@ -132,12 +132,12 @@ class WelcomeScreenState extends State<WelcomeScreen> {
       context: context,
       builder: (context) {
         return AlertDialog(
-          title: Text(AppLocalizations.of(context)!.common_errorTitle),
-          content: Text(message),
+          title: Text(AppLocalizations.of(context)!.common_errorTitle, style: const TextStyle(fontFamily: 'Bauhaus'),),
+          content: Text(message, style: const TextStyle(fontFamily: 'Bauhaus'),),
           actions: [
             TextButton(
               onPressed: () => Navigator.of(context).pop(),
-              child: Text(AppLocalizations.of(context)!.common_okayTitle),
+              child: Text(AppLocalizations.of(context)!.common_okayTitle, style: const TextStyle(fontFamily: 'Bauhaus'),),
             ),
           ],
         );
@@ -186,6 +186,7 @@ class WelcomeScreenState extends State<WelcomeScreen> {
                     style: const TextStyle(
                       fontSize: 24.0,
                       fontWeight: FontWeight.bold,
+                      fontFamily: 'Bauhaus',
                     ),
                   ),
                 ),
@@ -196,6 +197,7 @@ class WelcomeScreenState extends State<WelcomeScreen> {
                   AppLocalizations.of(context)!.registrationCodeInputLabel,
                   style: const TextStyle(
                     fontSize: 16.0,
+                    fontFamily: 'Bauhaus',
                   ),
                 ),
                 TextField(
@@ -203,6 +205,15 @@ class WelcomeScreenState extends State<WelcomeScreen> {
                   decoration: InputDecoration(
                     border: const OutlineInputBorder(),
                     labelText: AppLocalizations.of(context)!.registrationCodeInputHint,
+                    hintStyle: const TextStyle(
+                      fontFamily: 'Bauhaus',
+                    ),
+                    labelStyle: const TextStyle(
+                      fontFamily: 'Bauhaus',
+                    ),
+                  ),
+                  style: const TextStyle(
+                    fontFamily: 'Bauhaus',
                   ),
                 ),
                 const SizedBox(
@@ -224,17 +235,32 @@ class WelcomeScreenState extends State<WelcomeScreen> {
                     child: _isLoading
                       ? const CircularProgressIndicator(color: Colors.white)
                       : Text(
-                        AppLocalizations.of(context)!.registrationCodeSubmitButton,
-                        style: const TextStyle(
-                          color: Colors.white,
-                          fontSize: 16.0,
-                        ),
+                          AppLocalizations.of(context)!.registrationCodeSubmitButton,
+                          style: const TextStyle(
+                            color: Colors.white,
+                            fontSize: 16.0,
+                            fontFamily: 'Bauhaus',
+                          ),
                       ),
                   ),
                 ),
               ],
             ),
           ),
+        ),
+      ),
+      bottomNavigationBar: BottomAppBar(
+        color: Colors.lightBlue,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: <Widget>[
+            IconButton(
+              icon: const Icon(Icons.settings),
+              onPressed: () {
+                Navigator.pushNamed(context, SettingsView.routeName);
+              },
+            ),
+          ],
         ),
       ),
     );

@@ -36,6 +36,10 @@
   "@common_okayTitle": {
     "description": "A palavra \"Ok\" que é usada como rótulo de botão."
   },
+  "common_settingsTitle": "Configurações",
+  "@common_settingsTitle": {
+    "description": "A palavra \"Configurações\" que é usada como título para a tela de configurações."
+  },
   "common_submit": "Enviar",
   "@common_submit": {
     "description": "A palavra \"Enviar\" que é usada como rótulo de botão."
@@ -67,6 +71,30 @@
   "registrationCodeSubmitButton": "Vamos começar!",
   "@registrationCodeSubmitButton": {
     "description": "O rótulo do botão de envio do código de registro."
+  },
+  "settings_darkTheme": "Tema escuro",
+  "@settings_darkTheme": {
+    "description": "O rótulo para a configuração do tema escuro."
+  },
+  "settings_lightTheme": "Tema claro",
+  "@settings_lightTheme": {
+    "description": "O rótulo para a configuração do tema claro."
+  },
+  "settings_systemTheme": "Tema do sistema",
+  "@settings_systemTheme": {
+    "description": "O rótulo para a configuração do tema do sistema."
+  },
+  "studentInfoForm_emptyEmail": "Por favor, insira seu endereço de e-mail.",
+  "@studentInfoForm_emptyEmail": {
+    "description": "A mensagem de erro exibida quando o endereço de e-mail está vazio."
+  },
+  "studentInfoForm_emptyFirstName": "Por favor, insira seu primeiro nome.",
+  "@studentInfoForm_emptyFirstName": {
+    "description": "A mensagem de erro exibida quando o primeiro nome está vazio."
+  },
+  "studentInfoForm_emptyLastName": "Por favor, insira seu sobrenome.",
+  "@studentInfoForm_emptyLastName": {
+    "description": "A mensagem de erro que é exibida quando o sobrenome está vazio."
   },
   "welcomeStudent": "Bem-vindo, {firstName}!",
   "@welcomeStudent": {

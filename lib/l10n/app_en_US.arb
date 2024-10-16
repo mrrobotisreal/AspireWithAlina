@@ -36,6 +36,10 @@
   "@common_okayTitle": {
     "description": "The word \"Okay\" that is used as a button label."
   },
+  "common_settingsTitle": "Settings",
+  "@common_settingsTitle": {
+    "description": "The word \"Settings\" that is used as a title for the settings screen."
+  },
   "common_submit": "Submit",
   "@common_submit": {
     "description": "The word \"Submit\" that is used as a button label."
@@ -67,6 +71,30 @@
   "registrationCodeSubmitButton": "Let''s begin!",
   "@registrationCodeSubmitButton": {
     "description": "The label for the registration code submit button."
+  },
+  "settings_darkTheme": "Dark theme",
+  "@settings_darkTheme": {
+    "description": "The label for the dark theme setting."
+  },
+  "settings_lightTheme": "Light theme",
+  "@settings_lightTheme": {
+    "description": "The label for the light theme setting."
+  },
+  "settings_systemTheme": "System theme",
+  "@settings_systemTheme": {
+    "description": "The label for the system theme setting."
+  },
+  "studentInfoForm_emptyEmail": "Please enter your email address.",
+  "@studentInfoForm_emptyEmail": {
+    "description": "The error message that is displayed when the email address is empty."
+  },
+  "studentInfoForm_emptyFirstName": "Please enter your first name.",
+  "@studentInfoForm_emptyFirstName": {
+    "description": "The error message that is displayed when the first name is empty."
+  },
+  "studentInfoForm_emptyLastName": "Please enter your last name.",
+  "@studentInfoForm_emptyLastName": {
+    "description": "The error message that is displayed when the last name is empty."
   },
   "welcomeStudent": "Welcome, {firstName}!",
   "@welcomeStudent": {

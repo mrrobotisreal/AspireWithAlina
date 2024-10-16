@@ -36,6 +36,10 @@
   "@common_okayTitle": {
     "description": "Слово «Добре», яке використовується як напис кнопки."
   },
+  "common_settingsTitle": "Налаштування",
+  "@common_settingsTitle": {
+    "description": "Слово \"Налаштування\", яке використовується як заголовок екрана налаштувань."
+  },
   "common_submit": "Надіслати",
   "@common_submit": {
     "description": "Слово \"Надіслати\", яке використовується як мітка кнопки."
@@ -67,6 +71,30 @@
   "registrationCodeSubmitButton": "Почнемо!",
   "@registrationCodeSubmitButton": {
     "description": "Мітка для кнопки надсилання реєстраційного коду."
+  },
+  "settings_darkTheme": "Темна тема",
+  "@settings_darkTheme": {
+    "description": "Мітка для налаштування темної теми."
+  },
+  "settings_lightTheme": "Світла тема",
+  "@settings_lightTheme": {
+    "description": "Мітка для налаштування світлої теми."
+  },
+  "settings_systemTheme": "Тема системи",
+  "@settings_systemTheme": {
+    "description": "Позначка для налаштування теми системи."
+  },
+  "studentInfoForm_emptyEmail": "Будь ласка, введіть адресу електронної пошти.",
+  "@studentInfoForm_emptyEmail": {
+    "description": "Повідомлення про помилку, яке відображається, коли адреса електронної пошти порожня."
+  },
+  "studentInfoForm_emptyFirstName": "Будь ласка, введіть своє ім''я.",
+  "@studentInfoForm_emptyFirstName": {
+    "description": "Повідомлення про помилку, яке відображається, коли ім''я пусте."
+  },
+  "studentInfoForm_emptyLastName": "Введіть своє прізвище.",
+  "@studentInfoForm_emptyLastName": {
+    "description": "Повідомлення про помилку, яке відображається, якщо прізвище порожнє."
   },
   "welcomeStudent": "Ласкаво просимо, {firstName}!",
   "@welcomeStudent": {

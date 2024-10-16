@@ -36,6 +36,10 @@
   "@common_okayTitle": {
     "description": "Từ \"Được\" được dùng làm nhãn nút."
   },
+  "common_settingsTitle": "Cài đặt",
+  "@common_settingsTitle": {
+    "description": "Từ \"Cài đặt\" được dùng làm tiêu đề cho màn hình cài đặt."
+  },
   "common_submit": "Gửi",
   "@common_submit": {
     "description": "Từ \"Gửi\" được sử dụng làm nhãn nút."
@@ -67,6 +71,30 @@
   "registrationCodeSubmitButton": "Chúng ta bắt đầu thôi!",
   "@registrationCodeSubmitButton": {
     "description": "Nhãn cho nút gửi mã đăng ký."
+  },
+  "settings_darkTheme": "Chủ đề tối",
+  "@settings_darkTheme": {
+    "description": "Nhãn cho cài đặt chủ đề tối."
+  },
+  "settings_lightTheme": "Chủ đề nhẹ nhàng",
+  "@settings_lightTheme": {
+    "description": "Nhãn cho cài đặt chủ đề sáng."
+  },
+  "settings_systemTheme": "Chủ đề hệ thống",
+  "@settings_systemTheme": {
+    "description": "Nhãn cho cài đặt chủ đề hệ thống."
+  },
+  "studentInfoForm_emptyEmail": "Vui lòng nhập địa chỉ email của bạn.",
+  "@studentInfoForm_emptyEmail": {
+    "description": "Thông báo lỗi hiển thị khi địa chỉ email trống."
+  },
+  "studentInfoForm_emptyFirstName": "Vui lòng nhập tên của bạn.",
+  "@studentInfoForm_emptyFirstName": {
+    "description": "Thông báo lỗi hiển thị khi tên trống."
+  },
+  "studentInfoForm_emptyLastName": "Vui lòng nhập họ của bạn.",
+  "@studentInfoForm_emptyLastName": {
+    "description": "Thông báo lỗi hiển thị khi họ trống."
   },
   "welcomeStudent": "Chào mừng, {firstName}!",
   "@welcomeStudent": {

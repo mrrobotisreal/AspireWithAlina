@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 import 'settings_controller.dart';
 
@@ -17,7 +18,12 @@ class SettingsView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Settings'),
+        title: Text(
+          AppLocalizations.of(context)!.common_settingsTitle,
+          style: const TextStyle(
+            fontFamily: 'Bauhaus',
+          ),
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16),
@@ -30,19 +36,34 @@ class SettingsView extends StatelessWidget {
           value: controller.themeMode,
           // Call the updateThemeMode method any time the user selects a theme.
           onChanged: controller.updateThemeMode,
-          items: const [
+          items: [
             DropdownMenuItem(
               value: ThemeMode.system,
-              child: Text('System Theme'),
+              child: Text(
+                AppLocalizations.of(context)!.settings_systemTheme,
+                style: const TextStyle(
+                  fontFamily: 'Bauhaus',
+                ),
+              ),
             ),
             DropdownMenuItem(
               value: ThemeMode.light,
-              child: Text('Light Theme'),
+              child: Text(
+                AppLocalizations.of(context)!.settings_lightTheme,
+                style: const TextStyle(
+                  fontFamily: 'Bauhaus',
+                ),
+              ),
             ),
             DropdownMenuItem(
               value: ThemeMode.dark,
-              child: Text('Dark Theme'),
-            )
+              child: Text(
+                AppLocalizations.of(context)!.settings_darkTheme,
+                style: const TextStyle(
+                  fontFamily: 'Bauhaus',
+                ),
+              ),
+            ),
           ],
         ),
       ),
