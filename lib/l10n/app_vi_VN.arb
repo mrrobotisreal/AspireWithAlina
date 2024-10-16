@@ -1,0 +1,46 @@
+{
+  "appTitle": "Khao khát cùng Alina",
+  "@appTitle": {
+    "description": "Tiêu đề của ứng dụng."
+  },
+  "registrationCodeIsEmpty": "Vui lòng nhập mã đăng ký.",
+  "@registrationCodeIsEmpty": {
+    "description": "Thông báo lỗi hiển thị khi mã đăng ký trống."
+  },
+  "registrationCodeIsInvalid": "Ồ! Có vẻ như mã đăng ký bạn nhập đã hết hạn hoặc không hợp lệ. Vui lòng kiểm tra để đảm bảo bạn đã nhập đúng mã và thử lại. Nếu mã đăng ký vẫn không thành công, vui lòng liên hệ với Alina theo địa chỉ alina.ranok@gmail.com.",
+  "@registrationCodeIsInvalid": {
+    "description": "Thông báo lỗi hiển thị khi mã đăng ký không hợp lệ."
+  },
+  "registrationCodeServerError": "Lỗi máy chủ. Vui lòng thử lại sau.",
+  "@registrationCodeServerError": {
+    "description": "Thông báo lỗi hiển thị khi có lỗi máy chủ trong khi xác thực mã đăng ký."
+  },
+  "registrationCodeError": "Đã xảy ra lỗi. Vui lòng kiểm tra kết nối của bạn.",
+  "@registrationCodeError": {
+    "description": "Thông báo lỗi hiển thị khi có lỗi trong khi xác thực mã đăng ký."
+  },
+  "commonError": "Lỗi",
+  "@commonError": {
+    "description": "Từ \"Lỗi\" được dùng làm tiêu đề cho thông báo lỗi."
+  },
+  "commonOkay": "Được",
+  "@commonOkay": {
+    "description": "Từ \"Được\" được dùng làm nhãn nút."
+  },
+  "welcomeTitle": "Chào mừng đến với Aspire With Alina!",
+  "@welcomeTitle": {
+    "description": "Tiêu đề của màn hình chào mừng."
+  },
+  "registrationCodeInputLabel": "Vui lòng nhập mã đăng ký của bạn",
+  "@registrationCodeInputLabel": {
+    "description": "Nhãn cho trường nhập mã đăng ký."
+  },
+  "registrationCodeInputHint": "Mã đăng ký",
+  "@registrationCodeInputHint": {
+    "description": "Văn bản gợi ý cho trường nhập mã đăng ký."
+  },
+  "registrationCodeSubmitButton": "Chúng ta bắt đầu thôi!",
+  "@registrationCodeSubmitButton": {
+    "description": "Nhãn cho nút gửi mã đăng ký."
+  }
+}

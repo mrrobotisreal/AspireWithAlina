@@ -39,12 +39,12 @@ class AspireWithAlinaApp extends StatelessWidget {
           ],
           onGenerateTitle: (BuildContext context) =>
             AppLocalizations.of(context)!.appTitle,
+          title: 'Aspire With Alina',
           theme: ThemeData(
             primarySwatch: Colors.blue,
           ),
-          darkTheme: ThemeData.dark(),
+          darkTheme: ThemeData.light(),
           themeMode: settingsController.themeMode,
-          title: 'Aspire With Alina',
           home: const WelcomeScreen(),
           onGenerateRoute: (RouteSettings routeSettings) {
             return MaterialPageRoute<void>(
@@ -80,7 +80,7 @@ class WelcomeScreenState extends State<WelcomeScreen> {
     final String registrationCode = _codeController.text;
 
     if (registrationCode.isEmpty) {
-      _showErrorDialog(context, "Please enter a registration code.");
+      _showErrorDialog(context, AppLocalizations.of(context)!.registrationCodeIsEmpty);
       return;
     }
 
@@ -112,14 +112,13 @@ class WelcomeScreenState extends State<WelcomeScreen> {
             MaterialPageRoute(builder: (context) => const UserFormScreen()),
           );
         } else {
-          _showErrorDialog(context,
-              "Oops! It looks like the registration code you entered is either expired or invalid. Please check to make sure you entered to code correctly and try again. If the registration code continues to fail, please contact Alina at alina.ranok@gmail.com.");
+          _showErrorDialog(context, AppLocalizations.of(context)!.registrationCodeIsInvalid);
         }
       } else {
-        _showErrorDialog(context, "Server error. Please try again later.");
+        _showErrorDialog(context, AppLocalizations.of(context)!.registrationCodeServerError);
       }
     } catch (error) {
-      _showErrorDialog(context, "Error occurred. Please check your connection.");
+      _showErrorDialog(context, AppLocalizations.of(context)!.registrationCodeError);
       setState(() {
         _isLoading = false;
       });
@@ -132,12 +131,12 @@ class WelcomeScreenState extends State<WelcomeScreen> {
       context: context,
       builder: (context) {
         return AlertDialog(
-          title: const Text('Error'),
+          title: Text(AppLocalizations.of(context)!.commonError),
           content: Text(message),
           actions: [
             TextButton(
               onPressed: () => Navigator.of(context).pop(),
-              child: const Text('OK'),
+              child: Text(AppLocalizations.of(context)!.commonOkay),
             ),
           ],
         );
@@ -180,10 +179,10 @@ class WelcomeScreenState extends State<WelcomeScreen> {
               mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                const Center(
+                Center(
                   child: Text(
-                    'Welcome to Aspire With Alina!',
-                    style: TextStyle(
+                    AppLocalizations.of(context)!.welcomeTitle,
+                    style: const TextStyle(
                       fontSize: 24.0,
                       fontWeight: FontWeight.bold,
                     ),
@@ -192,17 +191,17 @@ class WelcomeScreenState extends State<WelcomeScreen> {
                 const SizedBox(
                   height: 24.0,
                 ),
-                const Text(
-                  'Please input your registration code',
-                  style: TextStyle(
+                Text(
+                  AppLocalizations.of(context)!.registrationCodeInputLabel,
+                  style: const TextStyle(
                     fontSize: 16.0,
                   ),
                 ),
                 TextField(
                   controller: _codeController,
-                  decoration: const InputDecoration(
-                    border: OutlineInputBorder(),
-                    labelText: 'Registration code',
+                  decoration: InputDecoration(
+                    border: const OutlineInputBorder(),
+                    labelText: AppLocalizations.of(context)!.registrationCodeInputHint,
                   ),
                 ),
                 const SizedBox(
@@ -223,9 +222,9 @@ class WelcomeScreenState extends State<WelcomeScreen> {
                     ),
                     child: _isLoading
                       ? const CircularProgressIndicator(color: Colors.white)
-                      : const Text(
-                        "Let's begin!",
-                        style: TextStyle(
+                      : Text(
+                        AppLocalizations.of(context)!.registrationCodeSubmitButton,
+                        style: const TextStyle(
                           color: Colors.white,
                           fontSize: 16.0,
                         ),

@@ -1,0 +1,46 @@
+{
+  "appTitle": "Aspire com a Alina",
+  "@appTitle": {
+    "description": "O título da aplicação."
+  },
+  "registrationCodeIsEmpty": "Por favor introduza um código de registo.",
+  "@registrationCodeIsEmpty": {
+    "description": "A mensagem de erro apresentada quando o código de registo está vazio."
+  },
+  "registrationCodeIsInvalid": "Ops! Parece que o código de registo introduzido expirou ou é inválido. Verifique se introduziu o código corretamente e tente novamente. Se o código de registo continuar a falhar, contacte a Alina em alina.ranok@gmail.com.",
+  "@registrationCodeIsInvalid": {
+    "description": "A mensagem de erro apresentada quando o código de registo é inválido."
+  },
+  "registrationCodeServerError": "Erro no servidor. Por favor, tente mais tarde.",
+  "@registrationCodeServerError": {
+    "description": "A mensagem de erro apresentada quando existe um erro no servidor durante a validação do código de registo."
+  },
+  "registrationCodeError": "Ocorreu um erro. Por favor, verifique a sua ligação.",
+  "@registrationCodeError": {
+    "description": "A mensagem de erro apresentada quando ocorre um erro durante a validação do código de registo."
+  },
+  "commonError": "Erro",
+  "@commonError": {
+    "description": "A palavra \"Erro\" utilizada como título para mensagens de erro."
+  },
+  "commonOkay": "Ok",
+  "@commonOkay": {
+    "description": "A palavra \"Ok\" utilizada como rótulo de botão."
+  },
+  "welcomeTitle": "Bem-vindo ao Aspire com a Alina!",
+  "@welcomeTitle": {
+    "description": "O título do ecrã de boas-vindas."
+  },
+  "registrationCodeInputLabel": "Por favor insira o seu código de registo",
+  "@registrationCodeInputLabel": {
+    "description": "O rótulo do campo de entrada do código de registo."
+  },
+  "registrationCodeInputHint": "Código de registo",
+  "@registrationCodeInputHint": {
+    "description": "O texto de dica para o campo de introdução do código de registo."
+  },
+  "registrationCodeSubmitButton": "Vamos começar!",
+  "@registrationCodeSubmitButton": {
+    "description": "O rótulo do botão de envio do código de registo."
+  }
+}

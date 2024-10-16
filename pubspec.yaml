@@ -17,6 +17,7 @@ dependencies:
   http: ^0.13.4
   community_material_icon: ^5.9.55
   shared_preferences: ^2.0.15
+  intl: ^0.18.1
 
 dev_dependencies:
   flutter_test:

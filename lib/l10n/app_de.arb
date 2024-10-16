@@ -1,0 +1,46 @@
+{
+  "appTitle": "Streben Sie mit Alina",
+  "@appTitle": {
+    "description": "Der Titel der Anwendung."
+  },
+  "registrationCodeIsEmpty": "Bitte geben Sie einen Registrierungscode ein.",
+  "@registrationCodeIsEmpty": {
+    "description": "Die Fehlermeldung, die angezeigt wird, wenn der Registrierungscode leer ist."
+  },
+  "registrationCodeIsInvalid": "Hoppla! Es sieht so aus, als ob der von Ihnen eingegebene Registrierungscode entweder abgelaufen oder ungültig ist. Bitte überprüfen Sie, ob Sie den Code richtig eingegeben haben, und versuchen Sie es erneut. Wenn der Registrierungscode weiterhin fehlschlägt, wenden Sie sich bitte an Alina unter alina.ranok@gmail.com.",
+  "@registrationCodeIsInvalid": {
+    "description": "Die Fehlermeldung, die angezeigt wird, wenn der Registrierungscode ungültig ist."
+  },
+  "registrationCodeServerError": "Serverfehler. Bitte versuche es später noch einmal.",
+  "@registrationCodeServerError": {
+    "description": "Die Fehlermeldung, die angezeigt wird, wenn beim Validieren des Registrierungscodes ein Serverfehler auftritt."
+  },
+  "registrationCodeError": "Es ist ein Fehler aufgetreten. Bitte überprüfen Sie Ihre Verbindung.",
+  "@registrationCodeError": {
+    "description": "Die Fehlermeldung, die angezeigt wird, wenn beim Validieren des Registrierungscodes ein Fehler auftritt."
+  },
+  "commonError": "Fehler",
+  "@commonError": {
+    "description": "Das Wort \"Fehler\", das als Titel für Fehlermeldungen verwendet wird."
+  },
+  "commonOkay": "Okay",
+  "@commonOkay": {
+    "description": "Das Wort \"Okay\", das als Schaltflächenbeschriftung verwendet wird."
+  },
+  "welcomeTitle": "Willkommen bei Aspire With Alina!",
+  "@welcomeTitle": {
+    "description": "Der Titel des Begrüßungsbildschirms."
+  },
+  "registrationCodeInputLabel": "Bitte geben Sie Ihren Registrierungscode ein",
+  "@registrationCodeInputLabel": {
+    "description": "Die Beschriftung für das Eingabefeld des Registrierungscodes."
+  },
+  "registrationCodeInputHint": "Registrierungscode",
+  "@registrationCodeInputHint": {
+    "description": "Der Hinweistext für das Registrierungscode-Eingabefeld."
+  },
+  "registrationCodeSubmitButton": "Lasst uns beginnen!",
+  "@registrationCodeSubmitButton": {
+    "description": "Die Beschriftung für die Schaltfläche zum Senden des Registrierungscodes."
+  }
+}

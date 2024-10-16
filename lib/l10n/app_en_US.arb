@@ -1,0 +1,46 @@
+{
+  "appTitle": "Aspire With Alina",
+  "@appTitle": {
+    "description": "The title of the application."
+  },
+  "registrationCodeIsEmpty": "Please enter a registration code.",
+  "@registrationCodeIsEmpty": {
+    "description": "The error message that is displayed when the registration code is empty."
+  },
+  "registrationCodeIsInvalid": "Oops! It looks like the registration code you entered is either expired or invalid. Please check to make sure you entered the code correctly and try again. If the registration code continues to fail, please contact Alina at alina.ranok@gmail.com.",
+  "@registrationCodeIsInvalid": {
+    "description": "The error message that is displayed when the registration code is invalid."
+  },
+  "registrationCodeServerError": "Server error. Please try again later.",
+  "@registrationCodeServerError": {
+    "description": "The error message that is displayed when there is a server error while validating the registration code."
+  },
+  "registrationCodeError": "Error occurred. Please check your connection.",
+  "@registrationCodeError": {
+    "description": "The error message that is displayed when there is an error while validating the registration code."
+  },
+  "commonError": "Error",
+  "@commonError": {
+    "description": "The word \"Error\" that is used as a title for error messages."
+  },
+  "commonOkay": "Okay",
+  "@commonOkay": {
+    "description": "The word \"Okay\" that is used as a button label."
+  },
+  "welcomeTitle": "Welcome to Aspire With Alina!",
+  "@welcomeTitle": {
+    "description": "The title of the welcome screen."
+  },
+  "registrationCodeInputLabel": "Please input your registration code",
+  "@registrationCodeInputLabel": {
+    "description": "The label for the registration code input field."
+  },
+  "registrationCodeInputHint": "Registration code",
+  "@registrationCodeInputHint": {
+    "description": "The hint text for the registration code input field."
+  },
+  "registrationCodeSubmitButton": "Let''s begin!",
+  "@registrationCodeSubmitButton": {
+    "description": "The label for the registration code submit button."
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "appTitle": "Aspire com Alina",
+  "@appTitle": {
+    "description": "O título do aplicativo."
+  },
+  "registrationCodeIsEmpty": "Insira um código de registro.",
+  "@registrationCodeIsEmpty": {
+    "description": "A mensagem de erro que é exibida quando o código de registro está vazio."
+  },
+  "registrationCodeIsInvalid": "Oops! Parece que o código de registro que você digitou expirou ou é inválido. Verifique se você digitou o código corretamente e tente novamente. Se o código de registro continuar falhando, entre em contato com Alina em alina.ranok@gmail.com.",
+  "@registrationCodeIsInvalid": {
+    "description": "A mensagem de erro exibida quando o código de registro é inválido."
+  },
+  "registrationCodeServerError": "Erro no servidor. Tente novamente mais tarde.",
+  "@registrationCodeServerError": {
+    "description": "A mensagem de erro que é exibida quando há um erro no servidor durante a validação do código de registro."
+  },
+  "registrationCodeError": "Ocorreu um erro. Verifique sua conexão.",
+  "@registrationCodeError": {
+    "description": "A mensagem de erro que é exibida quando há um erro ao validar o código de registro."
+  },
+  "commonError": "Erro",
+  "@commonError": {
+    "description": "A palavra \"Erro\" que é usada como título para mensagens de erro."
+  },
+  "commonOkay": "OK",
+  "@commonOkay": {
+    "description": "A palavra \"Ok\" que é usada como rótulo de botão."
+  },
+  "welcomeTitle": "Bem-vindo ao Aspire With Alina!",
+  "@welcomeTitle": {
+    "description": "O título da tela de boas-vindas."
+  },
+  "registrationCodeInputLabel": "Por favor, insira seu código de registro",
+  "@registrationCodeInputLabel": {
+    "description": "O rótulo para o campo de entrada do código de registro."
+  },
+  "registrationCodeInputHint": "Código de registro",
+  "@registrationCodeInputHint": {
+    "description": "O texto de dica para o campo de entrada do código de registro."
+  },
+  "registrationCodeSubmitButton": "Vamos começar!",
+  "@registrationCodeSubmitButton": {
+    "description": "O rótulo do botão de envio do código de registro."
+  }
+}

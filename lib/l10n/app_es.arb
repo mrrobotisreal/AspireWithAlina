@@ -1,0 +1,46 @@
+{
+  "appTitle": "Aspira con Alina",
+  "@appTitle": {
+    "description": "El título de la aplicación."
+  },
+  "registrationCodeIsEmpty": "Por favor, introduzca un código de registro.",
+  "@registrationCodeIsEmpty": {
+    "description": "El mensaje de error que se muestra cuando el código de registro está vacío."
+  },
+  "registrationCodeIsInvalid": "¡Ups! Parece que el código de registro que ingresaste está vencido o no es válido. Asegúrate de haber ingresado el código correctamente e inténtalo nuevamente. Si el código de registro sigue fallando, comunícate con Alina a alina.ranok@gmail.com.",
+  "@registrationCodeIsInvalid": {
+    "description": "El mensaje de error que se muestra cuando el código de registro no es válido."
+  },
+  "registrationCodeServerError": "Error del servidor. Inténtalo de nuevo más tarde.",
+  "@registrationCodeServerError": {
+    "description": "El mensaje de error que se muestra cuando hay un error del servidor al validar el código de registro."
+  },
+  "registrationCodeError": "Se produjo un error. Por favor, verifique su conexión.",
+  "@registrationCodeError": {
+    "description": "El mensaje de error que se muestra cuando hay un error al validar el código de registro."
+  },
+  "commonError": "Error",
+  "@commonError": {
+    "description": "La palabra \"Error\" que se utiliza como título para los mensajes de error."
+  },
+  "commonOkay": "Ok",
+  "@commonOkay": {
+    "description": "La palabra \"Ok\" que se utiliza como etiqueta de botón."
+  },
+  "welcomeTitle": "¡Bienvenido a Aspire con Alina!",
+  "@welcomeTitle": {
+    "description": "El título de la pantalla de bienvenida."
+  },
+  "registrationCodeInputLabel": "Por favor ingrese su código de registro",
+  "@registrationCodeInputLabel": {
+    "description": "La etiqueta para el campo de entrada del código de registro."
+  },
+  "registrationCodeInputHint": "Código de registro",
+  "@registrationCodeInputHint": {
+    "description": "El texto de sugerencia para el campo de entrada del código de registro."
+  },
+  "registrationCodeSubmitButton": "¡Empecemos!",
+  "@registrationCodeSubmitButton": {
+    "description": "La etiqueta para el botón de envío del código de registro."
+  }
+}

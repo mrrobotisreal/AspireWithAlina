@@ -1,0 +1,47 @@
+{
+  "appTitle": "Стремитесь вместе с Алиной",
+  "@appTitle": {
+    "description": "Название заявки."
+  },
+  "registrationCodeIsEmpty": "Введите регистрационный код.",
+  "@registrationCodeIsEmpty": {
+    "description": "Сообщение об ошибке, которое отображается, если регистрационный код пуст."
+  },
+  "registrationCodeIsInvalid": "Упс! Похоже, что введенный вами регистрационный код либо просрочен, либо недействителен. Проверьте, правильно ли вы ввели код, и попробуйте еще раз. Если регистрационный код снова не работает, свяжитесь с Алиной по адресу alina.ranok@gmail.com.",
+  "@registrationCodeIsInvalid": {
+    "description": "Сообщение об ошибке, которое отображается, если регистрационный код недействителен."
+  },
+  "registrationCodeServerError": "Ошибка сервера. Попробуйте еще раз позже.",
+  "@registrationCodeServerError": {
+    "description": "Сообщение об ошибке, которое отображается при возникновении ошибки сервера при проверке регистрационного кода."
+  },
+  "registrationCodeError": "Произошла ошибка. Проверьте соединение.",
+  "@registrationCodeError": {
+    "description": "Сообщение об ошибке, которое отображается при возникновении ошибки при проверке регистрационного кода."
+  },
+  "commonError": "Ошибка",
+  "@commonError": {
+    "description": "Слово «Ошибка», используемое в качестве заголовка сообщений об ошибках."
+  },
+  "commonOkay": "ОК",
+  "@commonOkay": {
+    "description": "Слово «ОК», используемое в качестве подписи к кнопке."
+  },
+  "welcomeTitle": "Добро пожаловать в Aspire With Alina!",
+  "@welcomeTitle": {
+    "description": "Заголовок экрана приветствия."
+  },
+  "registrationCodeInputLabel": "Введите ваш регистрационный код",
+  "@registrationCodeInputLabel": {
+    "description": "Метка для поля ввода регистрационного кода."
+  },
+  "registrationCodeInputHint": "Регистрационный код",
+  "@registrationCodeInputHint": {
+    "description": "Текст подсказки для поля ввода регистрационного кода."
+  },
+  "registrationCodeSubmitButton": "Начнем!",
+  "@registrationCodeSubmitButton": {
+    "description": "Метка для кнопки отправки регистрационного кода."
+  }
+}
+

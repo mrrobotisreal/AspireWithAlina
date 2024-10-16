@@ -1,0 +1,46 @@
+{
+  "appTitle": "Прагніть разом з Аліною",
+  "@appTitle": {
+    "description": "Назва програми."
+  },
+  "registrationCodeIsEmpty": "Будь ласка, введіть реєстраційний код.",
+  "@registrationCodeIsEmpty": {
+    "description": "Повідомлення про помилку, яке відображається, коли реєстраційний код порожній."
+  },
+  "registrationCodeIsInvalid": "Ой! Схоже, що введений вами реєстраційний код прострочений або недійсний. Перевірте, чи правильно ви ввели код, і повторіть спробу. Якщо реєстраційний код продовжує зникати, зв’яжіться з Аліною за адресою alina.ranok@gmail.com.",
+  "@registrationCodeIsInvalid": {
+    "description": "Повідомлення про помилку, яке відображається, коли реєстраційний код недійсний."
+  },
+  "registrationCodeServerError": "Помилка сервера. Спробуйте пізніше.",
+  "@registrationCodeServerError": {
+    "description": "Повідомлення про помилку, яке відображається, коли виникає помилка сервера під час перевірки реєстраційного коду."
+  },
+  "registrationCodeError": "Сталася помилка. Перевірте підключення.",
+  "@registrationCodeError": {
+    "description": "Повідомлення про помилку, яке відображається, коли виникає помилка під час перевірки реєстраційного коду."
+  },
+  "commonError": "Помилка",
+  "@commonError": {
+    "description": "Слово «Помилка», яке використовується як заголовок для повідомлень про помилки."
+  },
+  "commonOkay": "Добре",
+  "@commonOkay": {
+    "description": "Слово «Добре», яке використовується як напис кнопки."
+  },
+  "welcomeTitle": "Ласкаво просимо до Aspire With Alina!",
+  "@welcomeTitle": {
+    "description": "Заголовок екрана привітання."
+  },
+  "registrationCodeInputLabel": "Будь ласка, введіть свій реєстраційний код",
+  "@registrationCodeInputLabel": {
+    "description": "Мітка для поля введення реєстраційного коду."
+  },
+  "registrationCodeInputHint": "Реєстраційний код",
+  "@registrationCodeInputHint": {
+    "description": "Текст підказки для поля введення реєстраційного коду."
+  },
+  "registrationCodeSubmitButton": "Почнемо!",
+  "@registrationCodeSubmitButton": {
+    "description": "Мітка для кнопки надсилання реєстраційного коду."
+  }
+}

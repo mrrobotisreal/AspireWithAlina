@@ -1,3 +1,13 @@
-arb-dir: lib/src/localization
+arb-dir: lib/l10n
 template-arb-file: app_en.arb
 output-localization-file: app_localizations.dart
+supported-locales: # Add more supported locales here later.
+  - en_US
+  - ru_RU
+  - uk_UA
+  - de_DE
+  - es_ES
+  - vi_VN
+  - pt_PT
+  - pt_BR
+use-escaping: true
