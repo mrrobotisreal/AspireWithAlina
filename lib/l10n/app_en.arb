@@ -3,6 +3,55 @@
   "@appTitle": {
     "description": "The title of the application."
   },
+  "common_emailAddress": "Email address",
+  "@common_emailAddress": {
+    "description": "The label for the email address input field."
+  },
+  "common_errorMessage": "The following error occurred: {error}",
+  "@common_errorMessage": {
+    "description": "The error message that is displayed when an error occurs.",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "common_errorTitle": "Error",
+  "@common_errorTitle": {
+    "description": "The word \"Error\" that is used as a title for error messages."
+  },
+  "common_firstName": "First name (Given name)",
+  "@common_firstName": {
+    "description": "The label for the first name input field."
+  },
+  "common_lastName": "Last name (Family name)",
+  "@common_lastName": {
+    "description": "The label for the last name input field."
+  },
+  "common_menuTitle": "Menu",
+  "@common_menuTitle": {
+    "description": "The word \"Menu\" that is used as a title for the menu."
+  },
+  "common_okayTitle": "Okay",
+  "@common_okayTitle": {
+    "description": "The word \"Okay\" that is used as a button label."
+  },
+  "common_submit": "Submit",
+  "@common_submit": {
+    "description": "The word \"Submit\" that is used as a button label."
+  },
+  "registrationCodeError": "Error occurred. Please check your connection.",
+  "@registrationCodeError": {
+    "description": "The error message that is displayed when there is an error while validating the registration code."
+  },
+  "registrationCodeInputHint": "Registration code",
+  "@registrationCodeInputHint": {
+    "description": "The hint text for the registration code input field."
+  },
+  "registrationCodeInputLabel": "Please input your registration code",
+  "@registrationCodeInputLabel": {
+    "description": "The label for the registration code input field."
+  },
   "registrationCodeIsEmpty": "Please enter a registration code.",
   "@registrationCodeIsEmpty": {
     "description": "The error message that is displayed when the registration code is empty."
@@ -15,32 +64,33 @@
   "@registrationCodeServerError": {
     "description": "The error message that is displayed when there is a server error while validating the registration code."
   },
-  "registrationCodeError": "Error occurred. Please check your connection.",
-  "@registrationCodeError": {
-    "description": "The error message that is displayed when there is an error while validating the registration code."
+  "registrationCodeSubmitButton": "Let''s begin!",
+  "@registrationCodeSubmitButton": {
+    "description": "The label for the registration code submit button."
   },
-  "commonError": "Error",
-  "@commonError": {
-    "description": "The word \"Error\" that is used as a title for error messages."
+  "studentInfoForm_emptyEmail": "Please enter your email address.",
+  "@studentInfoForm_emptyEmail": {
+    "description": "The error message that is displayed when the email address is empty."
   },
-  "commonOkay": "Okay",
-  "@commonOkay": {
-    "description": "The word \"Okay\" that is used as a button label."
+  "studentInfoForm_emptyFirstName": "Please enter your first name.",
+  "@studentInfoForm_emptyFirstName": {
+    "description": "The error message that is displayed when the first name is empty."
+  },
+  "studentInfoForm_emptyLastName": "Please enter your last name.",
+  "@studentInfoForm_emptyLastName": {
+    "description": "The error message that is displayed when the last name is empty."
+  },
+  "welcomeStudent": "Welcome, {firstName}!",
+  "@welcomeStudent": {
+    "description": "The welcome message that is displayed to the student.",
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      }
+    }
   },
   "welcomeTitle": "Welcome to Aspire With Alina!",
   "@welcomeTitle": {
     "description": "The title of the welcome screen."
-  },
-  "registrationCodeInputLabel": "Please input your registration code",
-  "@registrationCodeInputLabel": {
-    "description": "The label for the registration code input field."
-  },
-  "registrationCodeInputHint": "Registration code",
-  "@registrationCodeInputHint": {
-    "description": "The hint text for the registration code input field."
-  },
-  "registrationCodeSubmitButton": "Let''s begin!",
-  "@registrationCodeSubmitButton": {
-    "description": "The label for the registration code submit button."
   }
 }

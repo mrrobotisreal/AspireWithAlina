@@ -3,6 +3,55 @@
   "@appTitle": {
     "description": "Tiêu đề của ứng dụng."
   },
+  "common_emailAddress": "Địa chỉ email",
+  "@common_emailAddress": {
+    "description": "Nhãn cho trường nhập địa chỉ email."
+  },
+  "common_errorMessage": "Đã xảy ra lỗi sau: {error}",
+  "@common_errorMessage": {
+    "description": "Thông báo lỗi được hiển thị khi có lỗi xảy ra.",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "common_errorTitle": "Lỗi",
+  "@common_errorTitle": {
+    "description": "Từ \"Lỗi\" được dùng làm tiêu đề cho thông báo lỗi."
+  },
+  "common_firstName": "Tên (Tên khai sinh)",
+  "@common_firstName": {
+    "description": "Nhãn cho trường nhập tên."
+  },
+  "common_lastName": "Họ (Tên gia đình)",
+  "@common_lastName": {
+    "description": "Nhãn cho trường nhập họ."
+  },
+  "common_menuTitle": "Thực đơn",
+  "@common_menuTitle": {
+    "description": "Từ \"Thực đơn\" được dùng làm tiêu đề cho thực đơn."
+  },
+  "common_okayTitle": "Được",
+  "@common_okayTitle": {
+    "description": "Từ \"Được\" được dùng làm nhãn nút."
+  },
+  "common_submit": "Gửi",
+  "@common_submit": {
+    "description": "Từ \"Gửi\" được sử dụng làm nhãn nút."
+  },
+  "registrationCodeError": "Đã xảy ra lỗi. Vui lòng kiểm tra kết nối của bạn.",
+  "@registrationCodeError": {
+    "description": "Thông báo lỗi hiển thị khi có lỗi trong khi xác thực mã đăng ký."
+  },
+  "registrationCodeInputHint": "Mã đăng ký",
+  "@registrationCodeInputHint": {
+    "description": "Văn bản gợi ý cho trường nhập mã đăng ký."
+  },
+  "registrationCodeInputLabel": "Vui lòng nhập mã đăng ký của bạn",
+  "@registrationCodeInputLabel": {
+    "description": "Nhãn cho trường nhập mã đăng ký."
+  },
   "registrationCodeIsEmpty": "Vui lòng nhập mã đăng ký.",
   "@registrationCodeIsEmpty": {
     "description": "Thông báo lỗi hiển thị khi mã đăng ký trống."
@@ -15,32 +64,21 @@
   "@registrationCodeServerError": {
     "description": "Thông báo lỗi hiển thị khi có lỗi máy chủ trong khi xác thực mã đăng ký."
   },
-  "registrationCodeError": "Đã xảy ra lỗi. Vui lòng kiểm tra kết nối của bạn.",
-  "@registrationCodeError": {
-    "description": "Thông báo lỗi hiển thị khi có lỗi trong khi xác thực mã đăng ký."
+  "registrationCodeSubmitButton": "Chúng ta bắt đầu thôi!",
+  "@registrationCodeSubmitButton": {
+    "description": "Nhãn cho nút gửi mã đăng ký."
   },
-  "commonError": "Lỗi",
-  "@commonError": {
-    "description": "Từ \"Lỗi\" được dùng làm tiêu đề cho thông báo lỗi."
-  },
-  "commonOkay": "Được",
-  "@commonOkay": {
-    "description": "Từ \"Được\" được dùng làm nhãn nút."
+  "welcomeStudent": "Chào mừng, {firstName}!",
+  "@welcomeStudent": {
+    "description": "Tin nhắn chào mừng được hiển thị cho học sinh.",
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      }
+    }
   },
   "welcomeTitle": "Chào mừng đến với Aspire With Alina!",
   "@welcomeTitle": {
     "description": "Tiêu đề của màn hình chào mừng."
-  },
-  "registrationCodeInputLabel": "Vui lòng nhập mã đăng ký của bạn",
-  "@registrationCodeInputLabel": {
-    "description": "Nhãn cho trường nhập mã đăng ký."
-  },
-  "registrationCodeInputHint": "Mã đăng ký",
-  "@registrationCodeInputHint": {
-    "description": "Văn bản gợi ý cho trường nhập mã đăng ký."
-  },
-  "registrationCodeSubmitButton": "Chúng ta bắt đầu thôi!",
-  "@registrationCodeSubmitButton": {
-    "description": "Nhãn cho nút gửi mã đăng ký."
   }
 }

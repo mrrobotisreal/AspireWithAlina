@@ -3,6 +3,55 @@
   "@appTitle": {
     "description": "Название заявки."
   },
+  "common_emailAddress": "Адрес электронной почты",
+  "@common_emailAddress": {
+    "description": "Метка для поля ввода адреса электронной почты."
+  },
+  "common_errorMessage": "Произошла следующая ошибка: {error}",
+  "@common_errorMessage": {
+    "description": "Сообщение об ошибке, которое отображается при возникновении ошибки.",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "common_errorTitle": "Ошибка",
+  "@common_errorTitle": {
+    "description": "Слово «Ошибка», используемое в качестве заголовка сообщений об ошибках."
+  },
+  "common_firstName": "Имя",
+  "@common_firstName": {
+    "description": "Метка для поля ввода имени."
+  },
+  "common_lastName": "Фамилия",
+  "@common_lastName": {
+    "description": "Метка для поля ввода фамилии."
+  },
+  "common_menuTitle": "Меню",
+  "@common_menuTitle": {
+    "description": "Слово «Меню», используемое в качестве названия меню."
+  },
+  "common_okayTitle": "ОК",
+  "@common_okayTitle": {
+    "description": "Слово «ОК», используемое в качестве подписи к кнопке."
+  },
+  "common_submit": "Отправить",
+  "@common_submit": {
+    "description": "Слово «Отправить», используемое в качестве подписи кнопки."
+  },
+  "registrationCodeError": "Произошла ошибка. Проверьте соединение.",
+  "@registrationCodeError": {
+    "description": "Сообщение об ошибке, которое отображается при возникновении ошибки при проверке регистрационного кода."
+  },
+  "registrationCodeInputHint": "Регистрационный код",
+  "@registrationCodeInputHint": {
+    "description": "Текст подсказки для поля ввода регистрационного кода."
+  },
+  "registrationCodeInputLabel": "Введите ваш регистрационный код",
+  "@registrationCodeInputLabel": {
+    "description": "Метка для поля ввода регистрационного кода."
+  },
   "registrationCodeIsEmpty": "Введите регистрационный код.",
   "@registrationCodeIsEmpty": {
     "description": "Сообщение об ошибке, которое отображается, если регистрационный код пуст."
@@ -15,33 +64,22 @@
   "@registrationCodeServerError": {
     "description": "Сообщение об ошибке, которое отображается при возникновении ошибки сервера при проверке регистрационного кода."
   },
-  "registrationCodeError": "Произошла ошибка. Проверьте соединение.",
-  "@registrationCodeError": {
-    "description": "Сообщение об ошибке, которое отображается при возникновении ошибки при проверке регистрационного кода."
+  "registrationCodeSubmitButton": "Начнем!",
+  "@registrationCodeSubmitButton": {
+    "description": "Метка для кнопки отправки регистрационного кода."
   },
-  "commonError": "Ошибка",
-  "@commonError": {
-    "description": "Слово «Ошибка», используемое в качестве заголовка сообщений об ошибках."
-  },
-  "commonOkay": "ОК",
-  "@commonOkay": {
-    "description": "Слово «ОК», используемое в качестве подписи к кнопке."
+  "welcomeStudent": "Добро пожаловать, {firstName}!",
+  "@welcomeStudent": {
+    "description": "Приветственное сообщение, которое отображается студенту.",
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      }
+    }
   },
   "welcomeTitle": "Добро пожаловать в Aspire With Alina!",
   "@welcomeTitle": {
     "description": "Заголовок экрана приветствия."
-  },
-  "registrationCodeInputLabel": "Введите ваш регистрационный код",
-  "@registrationCodeInputLabel": {
-    "description": "Метка для поля ввода регистрационного кода."
-  },
-  "registrationCodeInputHint": "Регистрационный код",
-  "@registrationCodeInputHint": {
-    "description": "Текст подсказки для поля ввода регистрационного кода."
-  },
-  "registrationCodeSubmitButton": "Начнем!",
-  "@registrationCodeSubmitButton": {
-    "description": "Метка для кнопки отправки регистрационного кода."
   }
 }
 

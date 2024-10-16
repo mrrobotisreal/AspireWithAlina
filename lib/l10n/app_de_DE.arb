@@ -3,6 +3,55 @@
   "@appTitle": {
     "description": "Der Titel der Anwendung."
   },
+  "common_emailAddress": "E-Mail-Adresse",
+  "@common_emailAddress": {
+    "description": "Die Beschriftung für das Eingabefeld für die E-Mail-Adresse."
+  },
+  "common_errorMessage": "Der folgende Fehler ist aufgetreten: {error}",
+  "@common_errorMessage": {
+    "description": "Die Fehlermeldung, die angezeigt wird, wenn ein Fehler auftritt.",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "common_errorTitle": "Fehler",
+  "@common_errorTitle": {
+    "description": "Das Wort \"Fehler\", das als Titel für Fehlermeldungen verwendet wird."
+  },
+  "common_firstName": "Vorname",
+  "@common_firstName": {
+    "description": "Die Beschriftung für das Vornamen-Eingabefeld."
+  },
+  "common_lastName": "Nachname (Familienname)",
+  "@common_lastName": {
+    "description": "Die Beschriftung für das Nachnamen-Eingabefeld."
+  },
+  "common_menuTitle": "Menü",
+  "@common_menuTitle": {
+    "description": "Das Wort „Menü“, das als Titel für das Menü verwendet wird."
+  },
+  "common_okayTitle": "Okay",
+  "@common_okayTitle": {
+    "description": "Das Wort \"Okay\", das als Schaltflächenbeschriftung verwendet wird."
+  },
+  "common_submit": "Senden",
+  "@common_submit": {
+    "description": "Das Wort \"Senden\", das als Schaltflächenbeschriftung verwendet wird."
+  },
+  "registrationCodeError": "Es ist ein Fehler aufgetreten. Bitte überprüfen Sie Ihre Verbindung.",
+  "@registrationCodeError": {
+    "description": "Die Fehlermeldung, die angezeigt wird, wenn beim Validieren des Registrierungscodes ein Fehler auftritt."
+  },
+  "registrationCodeInputHint": "Registrierungscode",
+  "@registrationCodeInputHint": {
+    "description": "Der Hinweistext für das Registrierungscode-Eingabefeld."
+  },
+  "registrationCodeInputLabel": "Bitte geben Sie Ihren Registrierungscode ein",
+  "@registrationCodeInputLabel": {
+    "description": "Die Beschriftung für das Eingabefeld des Registrierungscodes."
+  },
   "registrationCodeIsEmpty": "Bitte geben Sie einen Registrierungscode ein.",
   "@registrationCodeIsEmpty": {
     "description": "Die Fehlermeldung, die angezeigt wird, wenn der Registrierungscode leer ist."
@@ -15,32 +64,21 @@
   "@registrationCodeServerError": {
     "description": "Die Fehlermeldung, die angezeigt wird, wenn beim Validieren des Registrierungscodes ein Serverfehler auftritt."
   },
-  "registrationCodeError": "Es ist ein Fehler aufgetreten. Bitte überprüfen Sie Ihre Verbindung.",
-  "@registrationCodeError": {
-    "description": "Die Fehlermeldung, die angezeigt wird, wenn beim Validieren des Registrierungscodes ein Fehler auftritt."
+  "registrationCodeSubmitButton": "Lasst uns beginnen!",
+  "@registrationCodeSubmitButton": {
+    "description": "Die Beschriftung für die Schaltfläche zum Senden des Registrierungscodes."
   },
-  "commonError": "Fehler",
-  "@commonError": {
-    "description": "Das Wort \"Fehler\", das als Titel für Fehlermeldungen verwendet wird."
-  },
-  "commonOkay": "Okay",
-  "@commonOkay": {
-    "description": "Das Wort \"Okay\", das als Schaltflächenbeschriftung verwendet wird."
+  "welcomeStudent": "Willkommen, {firstName}!",
+  "@welcomeStudent": {
+    "description": "Die Willkommensnachricht, die dem Studierenden angezeigt wird.",
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      }
+    }
   },
   "welcomeTitle": "Willkommen bei Aspire With Alina!",
   "@welcomeTitle": {
     "description": "Der Titel des Begrüßungsbildschirms."
-  },
-  "registrationCodeInputLabel": "Bitte geben Sie Ihren Registrierungscode ein",
-  "@registrationCodeInputLabel": {
-    "description": "Die Beschriftung für das Eingabefeld des Registrierungscodes."
-  },
-  "registrationCodeInputHint": "Registrierungscode",
-  "@registrationCodeInputHint": {
-    "description": "Der Hinweistext für das Registrierungscode-Eingabefeld."
-  },
-  "registrationCodeSubmitButton": "Lasst uns beginnen!",
-  "@registrationCodeSubmitButton": {
-    "description": "Die Beschriftung für die Schaltfläche zum Senden des Registrierungscodes."
   }
 }

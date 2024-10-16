@@ -3,6 +3,55 @@
   "@appTitle": {
     "description": "El título de la aplicación."
   },
+  "common_emailAddress": "Dirección de correo electrónico",
+  "@common_emailAddress": {
+    "description": "La etiqueta para el campo de entrada de la dirección de correo electrónico."
+  },
+  "common_errorMessage": "Se produjo el siguiente error: {error}",
+  "@common_errorMessage": {
+    "description": "El mensaje de error que se muestra cuando ocurre un error.",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "common_errorTitle": "Error",
+  "@common_errorTitle": {
+    "description": "La palabra \"Error\" que se utiliza como título para los mensajes de error."
+  },
+  "common_firstName": "Nombre de pila",
+  "@common_firstName": {
+    "description": "La etiqueta para el campo de entrada del nombre."
+  },
+  "common_lastName": "Apellido (Nombre de la familia)",
+  "@common_lastName": {
+    "description": "La etiqueta para el campo de entrada de apellido."
+  },
+  "common_menuTitle": "Menú",
+  "@common_menuTitle": {
+    "description": "La palabra \"Menú\" que se utiliza como título del menú."
+  },
+  "common_okayTitle": "Ok",
+  "@common_okayTitle": {
+    "description": "La palabra \"Ok\" que se utiliza como etiqueta de botón."
+  },
+  "common_submit": "Enviar",
+  "@common_submit": {
+    "description": "La palabra \"Enviar\" que se utiliza como etiqueta de botón."
+  },
+  "registrationCodeError": "Se produjo un error. Por favor, verifique su conexión.",
+  "@registrationCodeError": {
+    "description": "El mensaje de error que se muestra cuando hay un error al validar el código de registro."
+  },
+  "registrationCodeInputHint": "Código de registro",
+  "@registrationCodeInputHint": {
+    "description": "El texto de sugerencia para el campo de entrada del código de registro."
+  },
+  "registrationCodeInputLabel": "Por favor ingrese su código de registro",
+  "@registrationCodeInputLabel": {
+    "description": "La etiqueta para el campo de entrada del código de registro."
+  },
   "registrationCodeIsEmpty": "Por favor, introduzca un código de registro.",
   "@registrationCodeIsEmpty": {
     "description": "El mensaje de error que se muestra cuando el código de registro está vacío."
@@ -15,32 +64,21 @@
   "@registrationCodeServerError": {
     "description": "El mensaje de error que se muestra cuando hay un error del servidor al validar el código de registro."
   },
-  "registrationCodeError": "Se produjo un error. Por favor, verifique su conexión.",
-  "@registrationCodeError": {
-    "description": "El mensaje de error que se muestra cuando hay un error al validar el código de registro."
+  "registrationCodeSubmitButton": "¡Empecemos!",
+  "@registrationCodeSubmitButton": {
+    "description": "La etiqueta para el botón de envío del código de registro."
   },
-  "commonError": "Error",
-  "@commonError": {
-    "description": "La palabra \"Error\" que se utiliza como título para los mensajes de error."
-  },
-  "commonOkay": "Ok",
-  "@commonOkay": {
-    "description": "La palabra \"Ok\" que se utiliza como etiqueta de botón."
+  "welcomeStudent": "¡Bienvenido, {firstName}!",
+  "@welcomeStudent": {
+    "description": "El mensaje de bienvenida que se muestra al estudiante.",
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      }
+    }
   },
   "welcomeTitle": "¡Bienvenido a Aspire con Alina!",
   "@welcomeTitle": {
     "description": "El título de la pantalla de bienvenida."
-  },
-  "registrationCodeInputLabel": "Por favor ingrese su código de registro",
-  "@registrationCodeInputLabel": {
-    "description": "La etiqueta para el campo de entrada del código de registro."
-  },
-  "registrationCodeInputHint": "Código de registro",
-  "@registrationCodeInputHint": {
-    "description": "El texto de sugerencia para el campo de entrada del código de registro."
-  },
-  "registrationCodeSubmitButton": "¡Empecemos!",
-  "@registrationCodeSubmitButton": {
-    "description": "La etiqueta para el botón de envío del código de registro."
   }
 }

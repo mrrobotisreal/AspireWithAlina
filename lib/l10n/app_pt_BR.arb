@@ -3,6 +3,55 @@
   "@appTitle": {
     "description": "O título do aplicativo."
   },
+  "common_emailAddress": "Endereço de email",
+  "@common_emailAddress": {
+    "description": "O rótulo para o campo de entrada de endereço de e-mail."
+  },
+  "common_errorMessage": "Ocorreu o seguinte erro: {error}",
+  "@common_errorMessage": {
+    "description": "A mensagem de erro exibida quando ocorre um erro.",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "common_errorTitle": "Erro",
+  "@common_errorTitle": {
+    "description": "A palavra \"Erro\" que é usada como título para mensagens de erro."
+  },
+  "common_firstName": "Primeiro nome (Nome próprio)",
+  "@common_firstName": {
+    "description": "O rótulo para o campo de entrada do primeiro nome."
+  },
+  "common_lastName": "Sobrenome",
+  "@common_lastName": {
+    "description": "O rótulo para o campo de entrada de sobrenome."
+  },
+  "common_menuTitle": "Menu",
+  "@common_menuTitle": {
+    "description": "A palavra \"Menu\" que é usada como título do menu."
+  },
+  "common_okayTitle": "OK",
+  "@common_okayTitle": {
+    "description": "A palavra \"Ok\" que é usada como rótulo de botão."
+  },
+  "common_submit": "Enviar",
+  "@common_submit": {
+    "description": "A palavra \"Enviar\" que é usada como rótulo de botão."
+  },
+  "registrationCodeError": "Ocorreu um erro. Verifique sua conexão.",
+  "@registrationCodeError": {
+    "description": "A mensagem de erro que é exibida quando há um erro ao validar o código de registro."
+  },
+  "registrationCodeInputHint": "Código de registro",
+  "@registrationCodeInputHint": {
+    "description": "O texto de dica para o campo de entrada do código de registro."
+  },
+  "registrationCodeInputLabel": "Por favor, insira seu código de registro",
+  "@registrationCodeInputLabel": {
+    "description": "O rótulo para o campo de entrada do código de registro."
+  },
   "registrationCodeIsEmpty": "Insira um código de registro.",
   "@registrationCodeIsEmpty": {
     "description": "A mensagem de erro que é exibida quando o código de registro está vazio."
@@ -15,32 +64,21 @@
   "@registrationCodeServerError": {
     "description": "A mensagem de erro que é exibida quando há um erro no servidor durante a validação do código de registro."
   },
-  "registrationCodeError": "Ocorreu um erro. Verifique sua conexão.",
-  "@registrationCodeError": {
-    "description": "A mensagem de erro que é exibida quando há um erro ao validar o código de registro."
+  "registrationCodeSubmitButton": "Vamos começar!",
+  "@registrationCodeSubmitButton": {
+    "description": "O rótulo do botão de envio do código de registro."
   },
-  "commonError": "Erro",
-  "@commonError": {
-    "description": "A palavra \"Erro\" que é usada como título para mensagens de erro."
-  },
-  "commonOkay": "OK",
-  "@commonOkay": {
-    "description": "A palavra \"Ok\" que é usada como rótulo de botão."
+  "welcomeStudent": "Bem-vindo, {firstName}!",
+  "@welcomeStudent": {
+    "description": "A mensagem de boas-vindas que é exibida ao aluno.",
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      }
+    }
   },
   "welcomeTitle": "Bem-vindo ao Aspire With Alina!",
   "@welcomeTitle": {
     "description": "O título da tela de boas-vindas."
-  },
-  "registrationCodeInputLabel": "Por favor, insira seu código de registro",
-  "@registrationCodeInputLabel": {
-    "description": "O rótulo para o campo de entrada do código de registro."
-  },
-  "registrationCodeInputHint": "Código de registro",
-  "@registrationCodeInputHint": {
-    "description": "O texto de dica para o campo de entrada do código de registro."
-  },
-  "registrationCodeSubmitButton": "Vamos começar!",
-  "@registrationCodeSubmitButton": {
-    "description": "O rótulo do botão de envio do código de registro."
   }
 }

@@ -3,6 +3,55 @@
   "@appTitle": {
     "description": "Назва програми."
   },
+  "common_emailAddress": "Адреса електронної пошти",
+  "@common_emailAddress": {
+    "description": "Мітка для поля введення електронної адреси."
+  },
+  "common_errorMessage": "Сталася така помилка: {error}",
+  "@common_errorMessage": {
+    "description": "Повідомлення про помилку, яке відображається, коли виникає помилка.",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  "common_errorTitle": "Помилка",
+  "@common_errorTitle": {
+    "description": "Слово «Помилка», яке використовується як заголовок для повідомлень про помилки."
+  },
+  "common_firstName": "Ім''я",
+  "@common_firstName": {
+    "description": "Мітка для поля введення імені."
+  },
+  "common_lastName": "Прізвище",
+  "@common_lastName": {
+    "description": "Мітка для поля введення прізвища."
+  },
+  "common_menuTitle": "Меню",
+  "@common_menuTitle": {
+    "description": "Слово \"Меню\", яке використовується як назва меню."
+  },
+  "common_okayTitle": "Добре",
+  "@common_okayTitle": {
+    "description": "Слово «Добре», яке використовується як напис кнопки."
+  },
+  "common_submit": "Надіслати",
+  "@common_submit": {
+    "description": "Слово \"Надіслати\", яке використовується як мітка кнопки."
+  },
+  "registrationCodeError": "Сталася помилка. Перевірте підключення.",
+  "@registrationCodeError": {
+    "description": "Повідомлення про помилку, яке відображається, коли виникає помилка під час перевірки реєстраційного коду."
+  },
+  "registrationCodeInputHint": "Реєстраційний код",
+  "@registrationCodeInputHint": {
+    "description": "Текст підказки для поля введення реєстраційного коду."
+  },
+  "registrationCodeInputLabel": "Будь ласка, введіть свій реєстраційний код",
+  "@registrationCodeInputLabel": {
+    "description": "Мітка для поля введення реєстраційного коду."
+  },
   "registrationCodeIsEmpty": "Будь ласка, введіть реєстраційний код.",
   "@registrationCodeIsEmpty": {
     "description": "Повідомлення про помилку, яке відображається, коли реєстраційний код порожній."
@@ -15,32 +64,21 @@
   "@registrationCodeServerError": {
     "description": "Повідомлення про помилку, яке відображається, коли виникає помилка сервера під час перевірки реєстраційного коду."
   },
-  "registrationCodeError": "Сталася помилка. Перевірте підключення.",
-  "@registrationCodeError": {
-    "description": "Повідомлення про помилку, яке відображається, коли виникає помилка під час перевірки реєстраційного коду."
+  "registrationCodeSubmitButton": "Почнемо!",
+  "@registrationCodeSubmitButton": {
+    "description": "Мітка для кнопки надсилання реєстраційного коду."
   },
-  "commonError": "Помилка",
-  "@commonError": {
-    "description": "Слово «Помилка», яке використовується як заголовок для повідомлень про помилки."
-  },
-  "commonOkay": "Добре",
-  "@commonOkay": {
-    "description": "Слово «Добре», яке використовується як напис кнопки."
+  "welcomeStudent": "Ласкаво просимо, {firstName}!",
+  "@welcomeStudent": {
+    "description": "Вітальне повідомлення, яке відображається студенту.",
+    "placeholders": {
+      "firstName": {
+        "type": "String"
+      }
+    }
   },
   "welcomeTitle": "Ласкаво просимо до Aspire With Alina!",
   "@welcomeTitle": {
     "description": "Заголовок екрана привітання."
-  },
-  "registrationCodeInputLabel": "Будь ласка, введіть свій реєстраційний код",
-  "@registrationCodeInputLabel": {
-    "description": "Мітка для поля введення реєстраційного коду."
-  },
-  "registrationCodeInputHint": "Реєстраційний код",
-  "@registrationCodeInputHint": {
-    "description": "Текст підказки для поля введення реєстраційного коду."
-  },
-  "registrationCodeSubmitButton": "Почнемо!",
-  "@registrationCodeSubmitButton": {
-    "description": "Мітка для кнопки надсилання реєстраційного коду."
   }
 }
