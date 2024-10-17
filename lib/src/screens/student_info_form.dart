@@ -1,3 +1,4 @@
+import 'package:aspire_with_alina/src/navigation/side_navigation_menu.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
@@ -182,25 +183,26 @@ class StudentInfoFormScreenState extends State<StudentInfoFormScreen> {
       body: Row(
         children: [
           // Sidebar menu
-          Container(
-            width: 250,
-            color: const Color(0xFF0057B7),
-            padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 16),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  AppLocalizations.of(context)!.common_menuTitle,
-                  style: const TextStyle(
-                    color: Colors.white,
-                    fontSize: 22,
-                    fontWeight: FontWeight.bold,
-                    fontFamily: 'Bauhaus',
-                  ),
-                ),
-              ],
-            ),
-          ),
+          // Container(
+          //   width: 250,
+          //   color: const Color(0xFF0057B7),
+          //   padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 16),
+          //   child: Column(
+          //     crossAxisAlignment: CrossAxisAlignment.start,
+          //     children: [
+          //       Text(
+          //         AppLocalizations.of(context)!.common_menuTitle,
+          //         style: const TextStyle(
+          //           color: Colors.white,
+          //           fontSize: 22,
+          //           fontWeight: FontWeight.bold,
+          //           fontFamily: 'Bauhaus',
+          //         ),
+          //       ),
+          //     ],
+          //   ),
+          // ),
+          const SideNavigationMenu(),
           // Main content area
           Expanded(
             child: Container(
