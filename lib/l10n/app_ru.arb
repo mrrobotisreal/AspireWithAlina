@@ -36,6 +36,10 @@
   "@common_okayTitle": {
     "description": "Слово «ОК», используемое в качестве подписи к кнопке."
   },
+  "common_passwordTitle": "Пароль",
+  "@common_passwordTitle": {
+    "description": "Слово «Пароль», используемое в качестве заголовка полей пароля."
+  },
   "common_settingsTitle": "Настройки",
   "@common_settingsTitle": {
     "description": "Слово «Настройки», используемое в качестве заголовка экрана настроек."
@@ -84,20 +88,60 @@
   "@settings_systemTheme": {
     "description": "Метка настройки системной темы."
   },
-  "studentInfoForm_emptyEmail": "Введите свой адрес электронной почты.",
-  "@studentInfoForm_emptyEmail": {
+  "studentInfoForm_description": "Пожалуйста, заполните форму ниже, чтобы завершить регистрацию. После заполнения формы нажмите кнопку «Отправить», чтобы создать учетную запись. После этого вы сможете использовать свой адрес электронной почты и пароль для входа в приложение.",
+  "@studentInfoForm_description": {
+    "description": "Описание, отображаемое в форме информации о студенте."
+  },
+  "studentInfoForm_emailErrorText_empty": "Адрес электронной почты не может быть пустым.",
+  "@studentInfoForm_emailErrorText_empty": {
     "description": "Сообщение об ошибке, отображаемое, если адрес электронной почты пуст."
   },
-  "studentInfoForm_emptyFirstName": "Введите свое имя.",
-  "@studentInfoForm_emptyFirstName": {
-    "description": "Сообщение об ошибке, которое отображается, если имя пустое."
+  "studentInfoForm_emailErrorText_invalid": "Пожалуйста, введите действительный адрес электронной почты.",
+  "@studentInfoForm_emailErrorText_invalid": {
+    "description": "Сообщение об ошибке, которое отображается, если адрес электронной почты недействителен."
   },
-  "studentInfoForm_emptyLastName": "Введите вашу фамилию.",
-  "@studentInfoForm_emptyLastName": {
-    "description": "Сообщение об ошибке, которое отображается, если фамилия не указана."
+  "studentInfoForm_emailInputLabel": "Пожалуйста, введите ваш адрес электронной почты",
+  "@studentInfoForm_emailInputLabel": {
+    "description": "Метка для поля ввода адреса электронной почты."
   },
-  "welcomeStudent": "Добро пожаловать, {firstName}!",
-  "@welcomeStudent": {
+  "studentInfoForm_nativeLanguageLabel": "Пожалуйста, выберите ваш родной язык",
+  "@studentInfoForm_nativeLanguageLabel": {
+    "description": "Метка для поля выбора родного языка."
+  },
+  "studentInfoForm_passwordErrorText_empty": "Пароль не может быть пустым.",
+  "@studentInfoForm_passwordErrorText_empty": {
+    "description": "Сообщение об ошибке, отображаемое, если пароль пустой."
+  },
+  "studentInfoForm_passwordErrorText_length": "Пароль должен быть длиной не менее 8 символов.",
+  "@studentInfoForm_passwordErrorText_length": {
+    "description": "Сообщение об ошибке, которое отображается, если пароль слишком короткий."
+  },
+  "studentInfoForm_passwordErrorText_lowercase": "Пароль должен содержать как минимум 1 строчную букву.",
+  "@studentInfoForm_passwordErrorText_lowercase": {
+    "description": "Сообщение об ошибке, которое отображается, если пароль не содержит строчных букв."
+  },
+  "studentInfoForm_passwordErrorText_number": "Пароль должен содержать как минимум 1 цифру.",
+  "@studentInfoForm_passwordErrorText_number": {
+    "description": "Сообщение об ошибке, которое отображается, если пароль не содержит цифры."
+  },
+  "studentInfoForm_passwordErrorText_specialCharacter": "Пароль должен содержать как минимум 1 специальный символ.",
+  "@studentInfoForm_passwordErrorText_specialCharacter": {
+    "description": "Сообщение об ошибке, которое отображается, если пароль не содержит специального символа."
+  },
+  "studentInfoForm_passwordErrorText_uppercase": "Пароль должен содержать как минимум 1 заглавную букву.",
+  "@studentInfoForm_passwordErrorText_uppercase": {
+    "description": "Сообщение об ошибке, которое отображается, если пароль не содержит заглавных букв."
+  },
+  "studentInfoForm_passwordInputLabel": "Пожалуйста, введите ваш пароль",
+  "@studentInfoForm_passwordInputLabel": {
+    "description": "Метка для поля ввода пароля."
+  },
+  "studentInfoForm_passwordInputRequirements": "(Он должен содержать не менее 8 символов, включая как минимум 1 заглавную букву, 1 строчную букву, 1 цифру и 1 специальный символ.)",
+  "@studentInfoForm_passwordInputRequirements": {
+    "description": "Требования к полю ввода пароля."
+  },
+  "studentInfoForm_welcomeStudent": "Добро пожаловать, {firstName}!",
+  "@studentInfoForm_welcomeStudent": {
     "description": "Приветственное сообщение, которое отображается студенту.",
     "placeholders": {
       "firstName": {
@@ -105,8 +149,36 @@
       }
     }
   },
-  "welcomeTitle": "Добро пожаловать в Aspire With Alina!",
-  "@welcomeTitle": {
+  "welcomeScreen_alreadyRegisteredButton": "Уже зарегистрированы?",
+  "@welcomeScreen_alreadyRegisteredButton": {
+    "description": "Метка кнопки, используемой для перехода на экран входа в систему."
+  },
+  "welcomeScreen_inputEmail": "Пожалуйста, введите ваш адрес электронной почты",
+  "@welcomeScreen_inputEmail": {
+    "description": "Текст метки для поля ввода адреса электронной почты."
+  },
+  "welcomeScreen_inputPassword": "Пожалуйста, введите ваш пароль",
+  "@welcomeScreen_inputPassword": {
+    "description": "Текст метки для поля ввода пароля."
+  },
+  "welcomeScreen_invalidEmailOrPassword": "Неправильный адрес электронной почты или пароль. Проверьте наличие опечаток и попробуйте еще раз.",
+  "@welcomeScreen_invalidEmailOrPassword": {
+    "description": "Сообщение об ошибке, которое отображается, если адрес электронной почты или пароль неверны."
+  },
+  "welcomeScreen_loginTitle": "Войти в...",
+  "@welcomeScreen_loginTitle": {
+    "description": "Заголовок экрана входа в систему."
+  },
+  "welcomeScreen_notRegisteredYetButton": "Еще не зарегистрированы?",
+  "@welcomeScreen_notRegisteredYetButton": {
+    "description": "Метка кнопки, используемой для перехода на экран регистрации."
+  },
+  "welcomeScreen_serverError": "Ошибка сервера. Попробуйте еще раз позже.",
+  "@welcomeScreen_serverError": {
+    "description": "Сообщение об ошибке, которое отображается при возникновении ошибки сервера при входе в систему."
+  },
+  "welcomeScreen_welcomeTitle": "Добро пожаловать в...",
+  "@welcomeScreen_welcomeTitle": {
     "description": "Заголовок экрана приветствия."
   }
 }

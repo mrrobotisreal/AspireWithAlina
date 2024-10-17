@@ -4,6 +4,7 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:crypt/crypt.dart';
 
 import 'settings/settings_controller.dart';
 import 'settings/settings_view.dart';
@@ -74,14 +75,19 @@ class WelcomeScreen extends StatefulWidget {
 }
 
 class WelcomeScreenState extends State<WelcomeScreen> {
-  final TextEditingController _codeController = TextEditingController();
+  final TextEditingController _codeEmailController = TextEditingController();
+  final TextEditingController _passwordController = TextEditingController();
   bool _isLoading = false;
+  bool _showLogin = false;
 
   Future<void> _validateCode(BuildContext context) async {
-    final String registrationCode = _codeController.text;
+    final String registrationCodeEmailAddress = _codeEmailController.text;
 
-    if (registrationCode.isEmpty) {
-      _showErrorDialog(context, AppLocalizations.of(context)!.registrationCodeIsEmpty);
+    if (registrationCodeEmailAddress.isEmpty) {
+      _showErrorDialog(
+        context,
+        AppLocalizations.of(context)!.registrationCodeIsEmpty,
+      );
       return;
     }
 
@@ -96,7 +102,7 @@ class WelcomeScreenState extends State<WelcomeScreen> {
           'Content-Type': 'application/json; charset=UTF-8',
         },
         body: jsonEncode(<String, String>{
-          'registration_code': registrationCode,
+          'registration_code': registrationCodeEmailAddress,
         }),
       );
 
@@ -107,16 +113,91 @@ class WelcomeScreenState extends State<WelcomeScreen> {
       if (response.statusCode == 200) {
         final Map<String, dynamic> responseBody = json.decode(response.body);
 
-        if (responseBody['registration_code'] == 'VALID') {
+        if (responseBody['is_valid']) {
           Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => const StudentInfoFormScreen()),
+            MaterialPageRoute(builder: (context) => StudentInfoFormScreen(
+              firstName: responseBody['first_name'],
+              lastName: responseBody['last_name'],
+              email: responseBody['email_address'],
+            )),
           );
         } else {
           _showErrorDialog(context, AppLocalizations.of(context)!.registrationCodeIsInvalid);
         }
       } else {
         _showErrorDialog(context, AppLocalizations.of(context)!.registrationCodeServerError);
+      }
+    } catch (error) {
+      _showErrorDialog(context, AppLocalizations.of(context)!.common_errorMessage(error.toString()));
+      setState(() {
+        _isLoading = false;
+      });
+    }
+  }
+
+  Future<void> _submitLogin(BuildContext context) async {
+    final String registrationCodeEmailAddress = _codeEmailController.text;
+    final String password = _passwordController.text;
+
+    if (registrationCodeEmailAddress.isEmpty) {
+      _showErrorDialog(
+        context,
+        AppLocalizations.of(context)!.welcomeScreen_inputEmail,
+      );
+      return;
+    }
+
+    if (password.isEmpty) {
+      _showErrorDialog(
+        context,
+        AppLocalizations.of(context)!.welcomeScreen_inputPassword,
+      );
+      return;
+    }
+
+    var hashedPassword = Crypt.sha256(password, salt: '').toString();
+    print('Hashed password: $hashedPassword');
+
+    setState(() {
+      _isLoading = true;
+    });
+
+    try {
+      final response = await http.post(
+        Uri.parse('http://127.0.0.1:8888/validate/login'),
+        headers: <String, String>{
+          'Content-Type': 'application/json; charset=UTF-8',
+        },
+        body: jsonEncode(<String, String>{
+          'email_address': registrationCodeEmailAddress,
+          'password': hashedPassword,
+        }),
+      );
+
+      setState(() {
+        _isLoading = false;
+      });
+
+      if (response.statusCode == 200) {
+        final Map<String, dynamic> responseBody = json.decode(response.body);
+
+        if (responseBody['is_valid'] && responseBody['student_info']['email_address'] == registrationCodeEmailAddress) {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => StudentInfoFormScreen(
+              firstName: responseBody['student_info']['first_name'],
+              lastName: responseBody['student_info']['last_name'],
+              email: responseBody['student_info']['email_address'],
+            )),
+          );
+        } else {
+          _showErrorDialog(context, AppLocalizations.of(context)!.welcomeScreen_invalidEmailOrPassword);
+        }
+      } else if (response.statusCode == 400) {
+        _showErrorDialog(context, AppLocalizations.of(context)!.welcomeScreen_invalidEmailOrPassword);
+      } else if (response.statusCode >= 500) {
+        _showErrorDialog(context, AppLocalizations.of(context)!.welcomeScreen_serverError);
       }
     } catch (error) {
       _showErrorDialog(context, AppLocalizations.of(context)!.common_errorMessage(error.toString()));
@@ -182,7 +263,19 @@ class WelcomeScreenState extends State<WelcomeScreen> {
               children: <Widget>[
                 Center(
                   child: Text(
-                    AppLocalizations.of(context)!.welcomeTitle,
+                    _showLogin
+                      ? AppLocalizations.of(context)!.welcomeScreen_loginTitle
+                      : AppLocalizations.of(context)!.welcomeScreen_welcomeTitle
+                    ,
+                    style: const TextStyle(
+                      fontSize: 22.0,
+                      fontFamily: 'Bauhaus',
+                    ),
+                  ),
+                ),
+                Center(
+                  child: Text(
+                    '${AppLocalizations.of(context)!.appTitle}!',
                     style: const TextStyle(
                       fontSize: 24.0,
                       fontWeight: FontWeight.bold,
@@ -193,18 +286,27 @@ class WelcomeScreenState extends State<WelcomeScreen> {
                 const SizedBox(
                   height: 24.0,
                 ),
-                Text(
-                  AppLocalizations.of(context)!.registrationCodeInputLabel,
-                  style: const TextStyle(
-                    fontSize: 16.0,
-                    fontFamily: 'Bauhaus',
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 10.0),
+                  child: Text(
+                    _showLogin
+                      ? AppLocalizations.of(context)!.welcomeScreen_inputEmail
+                      : AppLocalizations.of(context)!.registrationCodeInputLabel
+                    ,
+                    style: const TextStyle(
+                      fontSize: 16.0,
+                      fontFamily: 'Bauhaus',
+                    ),
                   ),
                 ),
                 TextField(
-                  controller: _codeController,
+                  controller: _codeEmailController,
                   decoration: InputDecoration(
                     border: const OutlineInputBorder(),
-                    labelText: AppLocalizations.of(context)!.registrationCodeInputHint,
+                    labelText: _showLogin
+                      ? AppLocalizations.of(context)!.common_emailAddress
+                      : AppLocalizations.of(context)!.registrationCodeInputHint
+                    ,
                     hintStyle: const TextStyle(
                       fontFamily: 'Bauhaus',
                     ),
@@ -216,33 +318,93 @@ class WelcomeScreenState extends State<WelcomeScreen> {
                     fontFamily: 'Bauhaus',
                   ),
                 ),
+                _showLogin
+                  ? const SizedBox(
+                      height: 24.0,
+                    )
+                  : const SizedBox.shrink()
+                ,
+                _showLogin
+                  ? Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 10.0),
+                      child: Text(
+                        AppLocalizations.of(context)!.welcomeScreen_inputPassword,
+                        style: const TextStyle(
+                          fontSize: 16.0,
+                          fontFamily: 'Bauhaus',
+                        ),
+                      ),
+                    )
+                  : const SizedBox.shrink()
+                ,
+                _showLogin
+                  ? TextField(
+                      controller: _passwordController,
+                      decoration: InputDecoration(
+                        border: const OutlineInputBorder(),
+                        labelText: AppLocalizations.of(context)!.common_passwordTitle,
+                        hintStyle: const TextStyle(
+                          fontFamily: 'Bauhaus',
+                        ),
+                        labelStyle: const TextStyle(
+                          fontFamily: 'Bauhaus',
+                        ),
+                      ),
+                      style: const TextStyle(
+                        fontFamily: 'Bauhaus',
+                      ),
+                    )
+                  : const SizedBox.shrink()
+                ,
                 const SizedBox(
                   height: 24.0,
                 ),
-                Align(
-                  alignment: Alignment.bottomRight,
-                  child: ElevatedButton(
-                    onPressed: _isLoading
-                      ? null
-                      : () => _validateCode(context), // Button action
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xFF0057B7), // Ukrainian flag blue
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 24.0,
-                        vertical: 12.0,
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    TextButton(
+                      onPressed: () => setState(() {
+                        _showLogin = !_showLogin;
+                      }),
+                      child: Text(
+                        _showLogin
+                          ? AppLocalizations.of(context)!.welcomeScreen_notRegisteredYetButton
+                          : AppLocalizations.of(context)!.welcomeScreen_alreadyRegisteredButton
+                        ,
+                        style: const TextStyle(
+                          fontFamily: 'Bauhaus',
+                        ),
                       ),
                     ),
-                    child: _isLoading
-                      ? const CircularProgressIndicator(color: Colors.white)
-                      : Text(
-                          AppLocalizations.of(context)!.registrationCodeSubmitButton,
-                          style: const TextStyle(
-                            color: Colors.white,
-                            fontSize: 16.0,
-                            fontFamily: 'Bauhaus',
-                          ),
+                    ElevatedButton(
+                      onPressed: _isLoading
+                        ? null
+                        : () {
+                          if (_showLogin) {
+                            _submitLogin(context);
+                          } else {
+                            _validateCode(context);
+                          }
+                        },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: const Color(0xFF0057B7), // Ukrainian flag blue
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 24.0,
+                          vertical: 12.0,
+                        ),
                       ),
-                  ),
+                      child: _isLoading
+                        ? const CircularProgressIndicator(color: Colors.white)
+                        : Text(
+                            AppLocalizations.of(context)!.registrationCodeSubmitButton,
+                            style: const TextStyle(
+                              color: Colors.white,
+                              fontSize: 16.0,
+                              fontFamily: 'Bauhaus',
+                            ),
+                        ),
+                    ),
+                  ],
                 ),
               ],
             ),

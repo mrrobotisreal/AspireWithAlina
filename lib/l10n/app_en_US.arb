@@ -36,6 +36,10 @@
   "@common_okayTitle": {
     "description": "The word \"Okay\" that is used as a button label."
   },
+  "common_passwordTitle": "Password",
+  "@common_passwordTitle": {
+    "description": "The word \"Password\" that is used as a title for password fields."
+  },
   "common_settingsTitle": "Settings",
   "@common_settingsTitle": {
     "description": "The word \"Settings\" that is used as a title for the settings screen."
@@ -84,20 +88,60 @@
   "@settings_systemTheme": {
     "description": "The label for the system theme setting."
   },
-  "studentInfoForm_emptyEmail": "Please enter your email address.",
-  "@studentInfoForm_emptyEmail": {
+  "studentInfoForm_description": "Please fill out the form below to complete your registration. Once you have completed the form, click the \"Submit\" button to create your account. You will then be able to use your email address and password to log in to the app.",
+  "@studentInfoForm_description": {
+    "description": "The description that is displayed on the student information form."
+  },
+  "studentInfoForm_emailErrorText_empty": "Email address cannot be empty.",
+  "@studentInfoForm_emailErrorText_empty": {
     "description": "The error message that is displayed when the email address is empty."
   },
-  "studentInfoForm_emptyFirstName": "Please enter your first name.",
-  "@studentInfoForm_emptyFirstName": {
-    "description": "The error message that is displayed when the first name is empty."
+  "studentInfoForm_emailErrorText_invalid": "Please enter a valid email address.",
+  "@studentInfoForm_emailErrorText_invalid": {
+    "description": "The error message that is displayed when the email address is invalid."
   },
-  "studentInfoForm_emptyLastName": "Please enter your last name.",
-  "@studentInfoForm_emptyLastName": {
-    "description": "The error message that is displayed when the last name is empty."
+  "studentInfoForm_emailInputLabel": "Please enter your email address",
+  "@studentInfoForm_emailInputLabel": {
+    "description": "The label for the email address input field."
   },
-  "welcomeStudent": "Welcome, {firstName}!",
-  "@welcomeStudent": {
+  "studentInfoForm_nativeLanguageLabel": "Please select your native language",
+  "@studentInfoForm_nativeLanguageLabel": {
+    "description": "The label for the native language selection field."
+  },
+  "studentInfoForm_passwordErrorText_empty": "Password cannot be empty.",
+  "@studentInfoForm_passwordErrorText_empty": {
+    "description": "The error message that is displayed when the password is empty."
+  },
+  "studentInfoForm_passwordErrorText_length": "Password must be at least 8 characters long.",
+  "@studentInfoForm_passwordErrorText_length": {
+    "description": "The error message that is displayed when the password is too short."
+  },
+  "studentInfoForm_passwordErrorText_lowercase": "Password must contain at least 1 lowercase letter.",
+  "@studentInfoForm_passwordErrorText_lowercase": {
+    "description": "The error message that is displayed when the password does not contain a lowercase letter."
+  },
+  "studentInfoForm_passwordErrorText_number": "Password must contain at least 1 number.",
+  "@studentInfoForm_passwordErrorText_number": {
+    "description": "The error message that is displayed when the password does not contain a number."
+  },
+  "studentInfoForm_passwordErrorText_specialCharacter": "Password must contain at least 1 special character.",
+  "@studentInfoForm_passwordErrorText_specialCharacter": {
+    "description": "The error message that is displayed when the password does not contain a special character."
+  },
+  "studentInfoForm_passwordErrorText_uppercase": "Password must contain at least 1 uppercase letter.",
+  "@studentInfoForm_passwordErrorText_uppercase": {
+    "description": "The error message that is displayed when the password does not contain an uppercase letter."
+  },
+  "studentInfoForm_passwordInputLabel": "Please enter your password",
+  "@studentInfoForm_passwordInputLabel": {
+    "description": "The label for the password input field."
+  },
+  "studentInfoForm_passwordInputRequirements": "(It must be at least 8 characters with at least 1 uppercase character, 1 lowercase character, 1 number, and 1 special character)",
+  "@studentInfoForm_passwordInputRequirements": {
+    "description": "The requirements for the password input field."
+  },
+  "studentInfoForm_welcomeStudent": "Welcome, {firstName}!",
+  "@studentInfoForm_welcomeStudent": {
     "description": "The welcome message that is displayed to the student.",
     "placeholders": {
       "firstName": {
@@ -105,8 +149,36 @@
       }
     }
   },
-  "welcomeTitle": "Welcome to Aspire With Alina!",
-  "@welcomeTitle": {
+  "welcomeScreen_alreadyRegisteredButton": "Already registered?",
+  "@welcomeScreen_alreadyRegisteredButton": {
+    "description": "The label for the button that is used to switch to the login screen."
+  },
+  "welcomeScreen_inputEmail": "Please enter your email address",
+  "@welcomeScreen_inputEmail": {
+    "description": "The label text for the email address input field."
+  },
+  "welcomeScreen_inputPassword": "Please enter your password",
+  "@welcomeScreen_inputPassword": {
+    "description": "The label text for the password input field."
+  },
+  "welcomeScreen_invalidEmailOrPassword": "Email address or password is incorrect. Please check for typos and try again.",
+  "@welcomeScreen_invalidEmailOrPassword": {
+    "description": "The error message that is displayed when the email address or password is incorrect."
+  },
+  "welcomeScreen_loginTitle": "Login to...",
+  "@welcomeScreen_loginTitle": {
+    "description": "The title of the login screen."
+  },
+  "welcomeScreen_notRegisteredYetButton": "Not registered yet?",
+  "@welcomeScreen_notRegisteredYetButton": {
+    "description": "The label for the button that is used to switch to the registration screen."
+  },
+  "welcomeScreen_serverError": "Server error. Please try again later.",
+  "@welcomeScreen_serverError": {
+    "description": "The error message that is displayed when there is a server error while logging in."
+  },
+  "welcomeScreen_welcomeTitle": "Welcome to...",
+  "@welcomeScreen_welcomeTitle": {
     "description": "The title of the welcome screen."
   }
 }

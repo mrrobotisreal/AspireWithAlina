@@ -36,6 +36,10 @@
   "@common_okayTitle": {
     "description": "A palavra \"Ok\" utilizada como rótulo de botão."
   },
+  "common_passwordTitle": "Palavra-passe",
+  "@common_passwordTitle": {
+    "description": "A palavra \"Palavra-passe\" utilizada como título para os campos de palavra-passe."
+  },
   "common_settingsTitle": "Configurações",
   "@common_settingsTitle": {
     "description": "A palavra \"Configurações\" utilizada como título do ecrã de configurações."
@@ -84,20 +88,60 @@
   "@settings_systemTheme": {
     "description": "O rótulo da configuração do tema do sistema."
   },
-  "studentInfoForm_emptyEmail": "Por favor, introduza o seu endereço de e-mail.",
-  "@studentInfoForm_emptyEmail": {
+  "studentInfoForm_description": "Por favor, preencha o formulário abaixo para completar o seu registo. Depois de preencher o formulário, clique no botão \"Submeter\" para criar a sua conta. Poderá então utilizar o seu endereço de e-mail e palavra-passe para iniciar sessão na aplicação.",
+  "@studentInfoForm_description": {
+    "description": "A descrição apresentada no formulário de informação do aluno."
+  },
+  "studentInfoForm_emailErrorText_empty": "O endereço de e-mail não pode ficar vazio.",
+  "@studentInfoForm_emailErrorText_empty": {
     "description": "A mensagem de erro apresentada quando o endereço de e-mail está vazio."
   },
-  "studentInfoForm_emptyFirstName": "Por favor, introduza o seu primeiro nome.",
-  "@studentInfoForm_emptyFirstName": {
-    "description": "A mensagem de erro apresentada quando o nome está vazio."
+  "studentInfoForm_emailErrorText_invalid": "Introduza um endereço de e-mail válido.",
+  "@studentInfoForm_emailErrorText_invalid": {
+    "description": "A mensagem de erro apresentada quando o endereço de e-mail é inválido."
   },
-  "studentInfoForm_emptyLastName": "Por favor, introduza o seu sobrenome.",
-  "@studentInfoForm_emptyLastName": {
-    "description": "A mensagem de erro apresentada quando o apelido está vazio."
+  "studentInfoForm_emailInputLabel": "Por favor introduza o seu endereço de e-mail",
+  "@studentInfoForm_emailInputLabel": {
+    "description": "O rótulo do campo de entrada do endereço de e-mail."
   },
-  "welcomeStudent": "Bem-vindo, {firstName}!",
-  "@welcomeStudent": {
+  "studentInfoForm_nativeLanguageLabel": "Por favor selecione o seu idioma nativo",
+  "@studentInfoForm_nativeLanguageLabel": {
+    "description": "O rótulo do campo de seleção do idioma nativo."
+  },
+  "studentInfoForm_passwordErrorText_empty": "A palavra-passe não pode ficar vazia.",
+  "@studentInfoForm_passwordErrorText_empty": {
+    "description": "A mensagem de erro apresentada quando a palavra-passe está vazia."
+  },
+  "studentInfoForm_passwordErrorText_length": "A palavra-passe deve ter pelo menos 8 caracteres.",
+  "@studentInfoForm_passwordErrorText_length": {
+    "description": "A mensagem de erro apresentada quando a palavra-passe é demasiado curta."
+  },
+  "studentInfoForm_passwordErrorText_lowercase": "A palavra-passe deve conter pelo menos 1 letra minúscula.",
+  "@studentInfoForm_passwordErrorText_lowercase": {
+    "description": "A mensagem de erro apresentada quando a palavra-passe não contém uma letra minúscula."
+  },
+  "studentInfoForm_passwordErrorText_number": "A palavra-passe deve conter pelo menos 1 número.",
+  "@studentInfoForm_passwordErrorText_number": {
+    "description": "A mensagem de erro apresentada quando a palavra-passe não contém um número."
+  },
+  "studentInfoForm_passwordErrorText_specialCharacter": "A palavra-passe deve conter pelo menos 1 caractere especial.",
+  "@studentInfoForm_passwordErrorText_specialCharacter": {
+    "description": "A mensagem de erro apresentada quando a palavra-passe não contém um caractere especial."
+  },
+  "studentInfoForm_passwordErrorText_uppercase": "A palavra-passe deve conter pelo menos 1 letra maiúscula.",
+  "@studentInfoForm_passwordErrorText_uppercase": {
+    "description": "A mensagem de erro apresentada quando a palavra-passe não contém uma letra maiúscula."
+  },
+  "studentInfoForm_passwordInputLabel": "Por favor introduza a sua senha",
+  "@studentInfoForm_passwordInputLabel": {
+    "description": "O rótulo do campo de introdução de palavras-passe."
+  },
+  "studentInfoForm_passwordInputRequirements": "(Deve ter pelo menos 8 caracteres com pelo menos 1 caractere maiúsculo, 1 caractere minúsculo, 1 número e 1 caractere especial)",
+  "@studentInfoForm_passwordInputRequirements": {
+    "description": "Os requisitos para o campo de introdução de palavras-passe."
+  },
+  "studentInfoForm_welcomeStudent": "Bem-vindo, {firstName}!",
+  "@studentInfoForm_welcomeStudent": {
     "description": "A mensagem de boas-vindas apresentada ao aluno.",
     "placeholders": {
       "firstName": {
@@ -105,8 +149,36 @@
       }
     }
   },
-  "welcomeTitle": "Bem-vindo ao Aspire com a Alina!",
-  "@welcomeTitle": {
+  "welcomeScreen_alreadyRegisteredButton": "Já está registado?",
+  "@welcomeScreen_alreadyRegisteredButton": {
+    "description": "O rótulo do botão utilizado para alternar para o ecrã de início de sessão."
+  },
+  "welcomeScreen_inputEmail": "Por favor introduza o seu endereço de e-mail",
+  "@welcomeScreen_inputEmail": {
+    "description": "O texto do rótulo do campo de entrada do endereço de e-mail."
+  },
+  "welcomeScreen_inputPassword": "Por favor introduza a sua senha",
+  "@welcomeScreen_inputPassword": {
+    "description": "O texto do rótulo do campo de introdução da palavra-passe."
+  },
+  "welcomeScreen_invalidEmailOrPassword": "O endereço de e-mail ou a palavra-passe estão incorretos. Verifique se existem erros de digitação e tente novamente.",
+  "@welcomeScreen_invalidEmailOrPassword": {
+    "description": "A mensagem de erro apresentada quando o endereço de e-mail ou a palavra-passe estão incorretos."
+  },
+  "welcomeScreen_loginTitle": "Iniciar sessão para...",
+  "@welcomeScreen_loginTitle": {
+    "description": "O título do ecrã de login."
+  },
+  "welcomeScreen_notRegisteredYetButton": "Ainda não está registado?",
+  "@welcomeScreen_notRegisteredYetButton": {
+    "description": "O rótulo do botão utilizado para alternar para o ecrã de registo."
+  },
+  "welcomeScreen_serverError": "Erro no servidor. Por favor, tente mais tarde.",
+  "@welcomeScreen_serverError": {
+    "description": "A mensagem de erro apresentada quando existe um erro no servidor durante o início de sessão."
+  },
+  "welcomeScreen_welcomeTitle": "Bem-vindo ao...",
+  "@welcomeScreen_welcomeTitle": {
     "description": "O título do ecrã de boas-vindas."
   }
 }

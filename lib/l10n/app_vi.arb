@@ -36,6 +36,10 @@
   "@common_okayTitle": {
     "description": "Từ \"Được\" được dùng làm nhãn nút."
   },
+  "common_passwordTitle": "Mật khẩu",
+  "@common_passwordTitle": {
+    "description": "Từ \"Mật khẩu\" được dùng làm tiêu đề cho các trường mật khẩu."
+  },
   "common_settingsTitle": "Cài đặt",
   "@common_settingsTitle": {
     "description": "Từ \"Cài đặt\" được dùng làm tiêu đề cho màn hình cài đặt."
@@ -84,20 +88,60 @@
   "@settings_systemTheme": {
     "description": "Nhãn cho cài đặt chủ đề hệ thống."
   },
-  "studentInfoForm_emptyEmail": "Vui lòng nhập địa chỉ email của bạn.",
-  "@studentInfoForm_emptyEmail": {
+  "studentInfoForm_description": "Vui lòng điền vào mẫu dưới đây để hoàn tất đăng ký của bạn. Sau khi hoàn tất mẫu, hãy nhấp vào nút \"Gửi\" để tạo tài khoản của bạn. Sau đó, bạn có thể sử dụng địa chỉ email và mật khẩu của mình để đăng nhập vào ứng dụng.",
+  "@studentInfoForm_description": {
+    "description": "Mô tả được hiển thị trên mẫu thông tin sinh viên."
+  },
+  "studentInfoForm_emailErrorText_empty": "Địa chỉ email không được để trống.",
+  "@studentInfoForm_emailErrorText_empty": {
     "description": "Thông báo lỗi hiển thị khi địa chỉ email trống."
   },
-  "studentInfoForm_emptyFirstName": "Vui lòng nhập tên của bạn.",
-  "@studentInfoForm_emptyFirstName": {
-    "description": "Thông báo lỗi hiển thị khi tên trống."
+  "studentInfoForm_emailErrorText_invalid": "Vui lòng nhập địa chỉ email hợp lệ.",
+  "@studentInfoForm_emailErrorText_invalid": {
+    "description": "Thông báo lỗi hiển thị khi địa chỉ email không hợp lệ."
   },
-  "studentInfoForm_emptyLastName": "Vui lòng nhập họ của bạn.",
-  "@studentInfoForm_emptyLastName": {
-    "description": "Thông báo lỗi hiển thị khi họ trống."
+  "studentInfoForm_emailInputLabel": "Vui lòng nhập địa chỉ email của bạn",
+  "@studentInfoForm_emailInputLabel": {
+    "description": "Nhãn cho trường nhập địa chỉ email."
   },
-  "welcomeStudent": "Chào mừng, {firstName}!",
-  "@welcomeStudent": {
+  "studentInfoForm_nativeLanguageLabel": "Vui lòng chọn ngôn ngữ mẹ đẻ của bạn",
+  "@studentInfoForm_nativeLanguageLabel": {
+    "description": "Nhãn cho trường lựa chọn ngôn ngữ bản địa."
+  },
+  "studentInfoForm_passwordErrorText_empty": "Mật khẩu không được để trống.",
+  "@studentInfoForm_passwordErrorText_empty": {
+    "description": "Thông báo lỗi hiển thị khi mật khẩu trống."
+  },
+  "studentInfoForm_passwordErrorText_length": "Mật khẩu phải dài ít nhất 8 ký tự.",
+  "@studentInfoForm_passwordErrorText_length": {
+    "description": "Thông báo lỗi hiển thị khi mật khẩu quá ngắn."
+  },
+  "studentInfoForm_passwordErrorText_lowercase": "Mật khẩu phải chứa ít nhất 1 chữ cái viết thường.",
+  "@studentInfoForm_passwordErrorText_lowercase": {
+    "description": "Thông báo lỗi hiển thị khi mật khẩu không chứa chữ cái thường."
+  },
+  "studentInfoForm_passwordErrorText_number": "Mật khẩu phải chứa ít nhất 1 chữ số.",
+  "@studentInfoForm_passwordErrorText_number": {
+    "description": "Thông báo lỗi hiển thị khi mật khẩu không chứa số."
+  },
+  "studentInfoForm_passwordErrorText_specialCharacter": "Mật khẩu phải chứa ít nhất 1 ký tự đặc biệt.",
+  "@studentInfoForm_passwordErrorText_specialCharacter": {
+    "description": "Thông báo lỗi hiển thị khi mật khẩu không chứa ký tự đặc biệt."
+  },
+  "studentInfoForm_passwordErrorText_uppercase": "Mật khẩu phải chứa ít nhất 1 chữ cái viết hoa.",
+  "@studentInfoForm_passwordErrorText_uppercase": {
+    "description": "Thông báo lỗi hiển thị khi mật khẩu không chứa chữ cái viết hoa."
+  },
+  "studentInfoForm_passwordInputLabel": "Vui lòng nhập mật khẩu của bạn",
+  "@studentInfoForm_passwordInputLabel": {
+    "description": "Nhãn cho trường nhập mật khẩu."
+  },
+  "studentInfoForm_passwordInputRequirements": "(Nó phải có ít nhất 8 ký tự với ít nhất 1 ký tự viết hoa, 1 ký tự viết thường, 1 số và 1 ký tự đặc biệt)",
+  "@studentInfoForm_passwordInputRequirements": {
+    "description": "Các yêu cầu đối với trường nhập mật khẩu."
+  },
+  "studentInfoForm_welcomeStudent": "Chào mừng, {firstName}!",
+  "@studentInfoForm_welcomeStudent": {
     "description": "Tin nhắn chào mừng được hiển thị cho học sinh.",
     "placeholders": {
       "firstName": {
@@ -105,8 +149,36 @@
       }
     }
   },
-  "welcomeTitle": "Chào mừng đến với Aspire With Alina!",
-  "@welcomeTitle": {
+  "welcomeScreen_alreadyRegisteredButton": "Đã đăng ký?",
+  "@welcomeScreen_alreadyRegisteredButton": {
+    "description": "Nhãn cho nút được sử dụng để chuyển sang màn hình đăng nhập."
+  },
+  "welcomeScreen_inputEmail": "Vui lòng nhập địa chỉ email của bạn",
+  "@welcomeScreen_inputEmail": {
+    "description": "Văn bản nhãn cho trường nhập địa chỉ email."
+  },
+  "welcomeScreen_inputPassword": "Vui lòng nhập mật khẩu của bạn",
+  "@welcomeScreen_inputPassword": {
+    "description": "Văn bản nhãn cho trường nhập mật khẩu."
+  },
+  "welcomeScreen_invalidEmailOrPassword": "Địa chỉ email hoặc mật khẩu không đúng. Vui lòng kiểm tra lỗi đánh máy và thử lại.",
+  "@welcomeScreen_invalidEmailOrPassword": {
+    "description": "Thông báo lỗi hiển thị khi địa chỉ email hoặc mật khẩu không đúng."
+  },
+  "welcomeScreen_loginTitle": "Đăng nhập vào...",
+  "@welcomeScreen_loginTitle": {
+    "description": "Tiêu đề của màn hình đăng nhập."
+  },
+  "welcomeScreen_notRegisteredYetButton": "Bạn chưa đăng ký?",
+  "@welcomeScreen_notRegisteredYetButton": {
+    "description": "Nhãn cho nút được sử dụng để chuyển sang màn hình đăng ký."
+  },
+  "welcomeScreen_serverError": "Lỗi máy chủ. Vui lòng thử lại sau.",
+  "@welcomeScreen_serverError": {
+    "description": "Thông báo lỗi hiển thị khi có lỗi máy chủ trong khi đăng nhập."
+  },
+  "welcomeScreen_welcomeTitle": "Chào mừng đến với...",
+  "@welcomeScreen_welcomeTitle": {
     "description": "Tiêu đề của màn hình chào mừng."
   }
 }

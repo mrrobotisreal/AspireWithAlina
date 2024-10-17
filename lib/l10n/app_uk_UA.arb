@@ -30,19 +30,23 @@
   },
   "common_menuTitle": "Меню",
   "@common_menuTitle": {
-    "description": "Слово \"Меню\", яке використовується як назва меню."
+    "description": "Слово «Меню», яке використовується як назва меню."
   },
   "common_okayTitle": "Добре",
   "@common_okayTitle": {
     "description": "Слово «Добре», яке використовується як напис кнопки."
   },
+  "common_passwordTitle": "Пароль",
+  "@common_passwordTitle": {
+    "description": "Слово «Пароль», яке використовується як заголовок для полів пароля."
+  },
   "common_settingsTitle": "Налаштування",
   "@common_settingsTitle": {
-    "description": "Слово \"Налаштування\", яке використовується як заголовок екрана налаштувань."
+    "description": "Слово «Налаштування», яке використовується як заголовок екрана налаштувань."
   },
   "common_submit": "Надіслати",
   "@common_submit": {
-    "description": "Слово \"Надіслати\", яке використовується як мітка кнопки."
+    "description": "Слово «Надіслати», яке використовується як мітка кнопки."
   },
   "registrationCodeError": "Сталася помилка. Перевірте підключення.",
   "@registrationCodeError": {
@@ -84,20 +88,60 @@
   "@settings_systemTheme": {
     "description": "Позначка для налаштування теми системи."
   },
-  "studentInfoForm_emptyEmail": "Будь ласка, введіть адресу електронної пошти.",
-  "@studentInfoForm_emptyEmail": {
+  "studentInfoForm_description": "Будь ласка, заповніть форму нижче, щоб завершити реєстрацію. Заповнивши форму, натисніть кнопку «Надіслати», щоб створити обліковий запис. Після цього ви зможете використовувати свою електронну адресу та пароль для входу в програму.",
+  "@studentInfoForm_description": {
+    "description": "Опис, який відображається у формі інформації про студента."
+  },
+  "studentInfoForm_emailErrorText_empty": "Адреса електронної пошти не може бути пустою.",
+  "@studentInfoForm_emailErrorText_empty": {
     "description": "Повідомлення про помилку, яке відображається, коли адреса електронної пошти порожня."
   },
-  "studentInfoForm_emptyFirstName": "Будь ласка, введіть своє ім''я.",
-  "@studentInfoForm_emptyFirstName": {
-    "description": "Повідомлення про помилку, яке відображається, коли ім''я пусте."
+  "studentInfoForm_emailErrorText_invalid": "Введіть дійсну адресу електронної пошти.",
+  "@studentInfoForm_emailErrorText_invalid": {
+    "description": "Повідомлення про помилку, яке відображається, якщо адреса електронної пошти недійсна."
   },
-  "studentInfoForm_emptyLastName": "Введіть своє прізвище.",
-  "@studentInfoForm_emptyLastName": {
-    "description": "Повідомлення про помилку, яке відображається, якщо прізвище порожнє."
+  "studentInfoForm_emailInputLabel": "Будь ласка, введіть адресу електронної пошти",
+  "@studentInfoForm_emailInputLabel": {
+    "description": "Мітка для поля введення електронної адреси."
   },
-  "welcomeStudent": "Ласкаво просимо, {firstName}!",
-  "@welcomeStudent": {
+  "studentInfoForm_nativeLanguageLabel": "Виберіть свою рідну мову",
+  "@studentInfoForm_nativeLanguageLabel": {
+    "description": "Мітка для поля вибору рідної мови."
+  },
+  "studentInfoForm_passwordErrorText_empty": "Пароль не може бути пустим.",
+  "@studentInfoForm_passwordErrorText_empty": {
+    "description": "Повідомлення про помилку, яке відображається, якщо пароль порожній."
+  },
+  "studentInfoForm_passwordErrorText_length": "Пароль має бути не менше 8 символів.",
+  "@studentInfoForm_passwordErrorText_length": {
+    "description": "Повідомлення про помилку, яке відображається, якщо пароль закороткий."
+  },
+  "studentInfoForm_passwordErrorText_lowercase": "Пароль має містити принаймні 1 малу літеру.",
+  "@studentInfoForm_passwordErrorText_lowercase": {
+    "description": "Повідомлення про помилку, яке відображається, якщо пароль не містить малу літеру."
+  },
+  "studentInfoForm_passwordErrorText_number": "Пароль має містити принаймні 1 цифру.",
+  "@studentInfoForm_passwordErrorText_number": {
+    "description": "Повідомлення про помилку, яке відображається, якщо пароль не містить числа."
+  },
+  "studentInfoForm_passwordErrorText_specialCharacter": "Пароль повинен містити принаймні 1 спеціальний символ.",
+  "@studentInfoForm_passwordErrorText_specialCharacter": {
+    "description": "Повідомлення про помилку, яке відображається, якщо пароль не містить спеціального символу."
+  },
+  "studentInfoForm_passwordErrorText_uppercase": "Пароль має містити принаймні 1 велику літеру.",
+  "@studentInfoForm_passwordErrorText_uppercase": {
+    "description": "Повідомлення про помилку, яке відображається, якщо пароль не містить велику літеру."
+  },
+  "studentInfoForm_passwordInputLabel": "Будь ласка, введіть свій пароль",
+  "@studentInfoForm_passwordInputLabel": {
+    "description": "Мітка для поля введення пароля."
+  },
+  "studentInfoForm_passwordInputRequirements": "(Він має містити принаймні 8 символів із принаймні 1 символом у верхньому регістрі, 1 символом у нижньому регістрі, 1 цифрою та 1 спеціальним символом)",
+  "@studentInfoForm_passwordInputRequirements": {
+    "description": "Вимоги до поля введення пароля."
+  },
+  "studentInfoForm_welcomeStudent": "Ласкаво просимо, {firstName}!",
+  "@studentInfoForm_welcomeStudent": {
     "description": "Вітальне повідомлення, яке відображається студенту.",
     "placeholders": {
       "firstName": {
@@ -105,8 +149,36 @@
       }
     }
   },
-  "welcomeTitle": "Ласкаво просимо до Aspire With Alina!",
-  "@welcomeTitle": {
+  "welcomeScreen_alreadyRegisteredButton": "Вже зареєструвалися?",
+  "@welcomeScreen_alreadyRegisteredButton": {
+    "description": "Мітка для кнопки, яка використовується для переходу на екран входу."
+  },
+  "welcomeScreen_inputEmail": "Будь ласка, введіть адресу електронної пошти",
+  "@welcomeScreen_inputEmail": {
+    "description": "Текст мітки для поля введення електронної адреси."
+  },
+  "welcomeScreen_inputPassword": "Будь ласка, введіть свій пароль",
+  "@welcomeScreen_inputPassword": {
+    "description": "Текст мітки для поля введення пароля."
+  },
+  "welcomeScreen_invalidEmailOrPassword": "Адреса електронної пошти або пароль неправильні. Перевірте помилки та повторіть спробу.",
+  "@welcomeScreen_invalidEmailOrPassword": {
+    "description": "Повідомлення про помилку, яке відображається, якщо адреса електронної пошти або пароль неправильні."
+  },
+  "welcomeScreen_loginTitle": "Увійдіть до...",
+  "@welcomeScreen_loginTitle": {
+    "description": "Заголовок екрана входу."
+  },
+  "welcomeScreen_notRegisteredYetButton": "Ще не зареєстровані?",
+  "@welcomeScreen_notRegisteredYetButton": {
+    "description": "Мітка для кнопки, яка використовується для переходу на екран реєстрації."
+  },
+  "welcomeScreen_serverError": "Помилка сервера. Спробуйте пізніше.",
+  "@welcomeScreen_serverError": {
+    "description": "Повідомлення про помилку, яке відображається, якщо під час входу в систему виникає помилка сервера."
+  },
+  "welcomeScreen_welcomeTitle": "Ласкаво просимо до...",
+  "@welcomeScreen_welcomeTitle": {
     "description": "Заголовок екрана привітання."
   }
 }
