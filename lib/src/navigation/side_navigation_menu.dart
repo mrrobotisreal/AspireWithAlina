@@ -12,83 +12,116 @@ class SideNavigationMenu extends StatefulWidget {
 }
 
 class SideNavigationMenuState extends State<SideNavigationMenu> {
-  bool _isMenuExpanded = true;
-
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      child: AnimatedContainer(
-        width: _isMenuExpanded ? 250 : 70,
-        duration: const Duration(milliseconds: 300),
-        child: Column(
+        child: ListView(
+          padding: EdgeInsets.zero,
           children: [
-            _isMenuExpanded
-              ? DrawerHeader(
-                  decoration: const BoxDecoration(
-                    color: AppTheme.lightPrimaryColor,
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 104),
-                    child: Text(
-                      AppLocalizations.of(context)!.common_menuTitle,
-                      style: const TextStyle(
-                        fontSize: 24,
-                        fontWeight: FontWeight.bold,
-                        fontFamily: 'Bauhaus',
-                        color: AppTheme.darkHeaderTextColor,
-                      ),
+            DrawerHeader(
+              decoration: const BoxDecoration(
+                color: Colors.blue,
+              ),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 10),
+                child: Center(
+                  child: Text(
+                    AppLocalizations.of(context)!.common_menuTitle,
+                    style: const TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                      fontFamily: 'Bauhaus',
+                      color: AppTheme.darkHeaderTextColor,
+                      decoration: TextDecoration.underline,
+                      decorationStyle: TextDecorationStyle.solid,
+                      decorationColor: Colors.white,
                     ),
                   ),
-                )
-              : IconButton(
-                  icon: Icon(Icons.menu),
-                  onPressed: () {
-                    setState(() {
-                      _isMenuExpanded = true;
-                    });
-                  },
                 ),
-            if (_isMenuExpanded)
-              ListTile(
-                leading: const Icon(Icons.home),
-                title: const Text('Home'),
-                onTap: () {
-                  Navigator.pop(context);
-                  Navigator.pushNamed(context, '/');
-                },
               ),
-            if (_isMenuExpanded)
-              ListTile(
-                leading: const Icon(Icons.games),
-                title: const Text('Games'),
-                onTap: () {
-                  Navigator.pop(context);
-                  Navigator.pushNamed(context, '/games');
-                },
+            ),
+            ListTile(
+              iconColor: AppTheme.lightBodyTextColor,
+              leading: const Icon(Icons.home),
+              title: Padding(
+                padding: const EdgeInsets.only(left: 10),
+                child: Text(
+                  AppLocalizations.of(context)!.common_home,
+                  style: const TextStyle(
+                    fontFamily: 'Bauhaus',
+                    color: AppTheme.lightBodyTextColor,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                  ),
+                ),
               ),
-            if (_isMenuExpanded)
-              ListTile(
-                leading: const Icon(Icons.settings),
-                title: const Text('Settings'),
-                onTap: () {
-                  Navigator.pop(context);
-                  Navigator.pushNamed(context, '/settings');
-                },
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.pushNamed(context, '/home');
+              },
+            ),
+            ListTile(
+              iconColor: AppTheme.lightBodyTextColor,
+              leading: const Icon(Icons.games),
+              title: Padding(
+                padding: const EdgeInsets.only(left: 10),
+                child: Text(
+                  AppLocalizations.of(context)!.common_games,
+                  style: const TextStyle(
+                    fontFamily: 'Bauhaus',
+                    color: AppTheme.lightBodyTextColor,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                  ),
+                ),
               ),
-            const Spacer(),
-            if (_isMenuExpanded)
-              ListTile(
-                leading: const Icon(Icons.arrow_back),
-                title: const Text('Collapse'),
-                onTap: () {
-                  setState(() {
-                    _isMenuExpanded = false;
-                  });
-                }
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.pushNamed(context, '/games');
+              },
+            ),
+            ListTile(
+              iconColor: AppTheme.lightBodyTextColor,
+              leading: const Icon(Icons.settings),
+              title: Padding(
+                padding: const EdgeInsets.only(left: 10),
+                child: Text(
+                  AppLocalizations.of(context)!.common_settingsTitle,
+                  style: const TextStyle(
+                    fontFamily: 'Bauhaus',
+                    color: AppTheme.lightBodyTextColor,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                  ),
+                ),
               ),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.pushNamed(context, '/settings');
+              },
+            ),
+            ListTile(
+              iconColor: AppTheme.lightBodyTextColor,
+              leading: const Icon(Icons.arrow_back),
+              title: Padding(
+                padding: const EdgeInsets.only(left: 10),
+                child: Text(
+                  AppLocalizations.of(context)!.common_logout,
+                  style: const TextStyle(
+                    fontFamily: 'Bauhaus',
+                    color: AppTheme.lightBodyTextColor,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                  ),
+                ),
+              ),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.pushNamed(context, '/welcome');
+              }
+            ),
           ],
         ),
-      ),
     );
   }
 }

@@ -1,4 +1,6 @@
+import 'package:aspire_with_alina/src/home.dart';
 import 'package:aspire_with_alina/src/navigation/side_navigation_menu.dart';
+import 'package:aspire_with_alina/src/settings/settings_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
@@ -8,11 +10,13 @@ import 'package:crypt/crypt.dart';
 class StudentInfoFormScreen extends StatefulWidget {
   const StudentInfoFormScreen({
     super.key,
+    required this.settingsController,
     required this.firstName,
     required this.lastName,
     required this.email,
   });
 
+  final SettingsController settingsController;
   final String firstName;
   final String lastName;
   final String email;
@@ -77,7 +81,7 @@ class StudentInfoFormScreenState extends State<StudentInfoFormScreen> {
     });
   }
 
-  Future<void> _validateForm(BuildContext context, String firstName, String lastName) async {
+  Future<void> _validateForm(BuildContext context, String firstName, String lastName, SettingsController settingsController) async {
     final String email = _emailController.text;
     final String password = _passwordController.text;
 
@@ -116,7 +120,7 @@ class StudentInfoFormScreenState extends State<StudentInfoFormScreen> {
     var hashedPassword = Crypt.sha256(password, salt: '').toString(); // Salt is added in the backend
 
     try {
-      await http.post(
+      final response = await http.post(
         Uri.parse('http://127.0.0.1:8888/students/create'),
         headers: <String, String>{
           'Content-Type': 'application/json; charset=UTF-8',
@@ -130,11 +134,28 @@ class StudentInfoFormScreenState extends State<StudentInfoFormScreen> {
         }),
       );
 
-      setState(() {
-        _isLoading = false;
-        _emailController.clear();
-        _passwordController.clear();
-      });
+      if (response.statusCode == 200) {
+        setState(() {
+          _isLoading = false;
+          _emailController.clear();
+          _passwordController.clear();
+        });
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => HomeScreen(
+              settingsController: settingsController,
+              firstName: firstName,
+              lastName: lastName,
+              email: email,
+            ),
+          ),
+        );
+      } else if (response.statusCode == 400) {
+        _showErrorDialog(context, 'The submitted form data is invalid. Please check your input and try again.');
+      } else if (response.statusCode >= 500) {
+        _showErrorDialog(context, 'A server error occurred while processing your request. Please try again later.');
+      }
     } catch (error) {
       _showErrorDialog(context, AppLocalizations.of(context)!.common_errorMessage(error.toString()));
       setState(() {
@@ -180,30 +201,58 @@ class StudentInfoFormScreenState extends State<StudentInfoFormScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(kToolbarHeight),
+        child: Container(
+          decoration: const BoxDecoration(
+            boxShadow: <BoxShadow>[
+              BoxShadow(
+                color: Color.fromARGB(150, 126, 126, 126),
+                spreadRadius: 2,
+                blurRadius: 5,
+                offset: Offset(0, 3),
+              ),
+            ],
+          ),
+          child: AppBar(
+            elevation: 24,
+            backgroundColor: Colors.blue,
+            iconTheme: const IconThemeData(color: Colors.white),
+            title: Text(
+              'Student Info Form',
+              style: const TextStyle(
+                color: Colors.white,
+                fontFamily: 'Bauhaus',
+                fontWeight: FontWeight.bold,
+                decoration: TextDecoration.underline,
+                decorationStyle: TextDecorationStyle.solid,
+                decorationColor: Colors.white,
+              ),
+            ),
+            actions: [
+              IconButton(
+                icon: const Icon(Icons.settings),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/settings');
+                },
+              ),
+            ],
+            leading: Builder(
+              builder: (context) {
+                return IconButton(
+                  icon: const Icon(Icons.menu),
+                  onPressed: () {
+                    Scaffold.of(context).openDrawer();
+                  },
+                );
+              },
+            ),
+          ),
+        ),
+      ),
+      drawer: const SideNavigationMenu(),
       body: Row(
         children: [
-          // Sidebar menu
-          // Container(
-          //   width: 250,
-          //   color: const Color(0xFF0057B7),
-          //   padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 16),
-          //   child: Column(
-          //     crossAxisAlignment: CrossAxisAlignment.start,
-          //     children: [
-          //       Text(
-          //         AppLocalizations.of(context)!.common_menuTitle,
-          //         style: const TextStyle(
-          //           color: Colors.white,
-          //           fontSize: 22,
-          //           fontWeight: FontWeight.bold,
-          //           fontFamily: 'Bauhaus',
-          //         ),
-          //       ),
-          //     ],
-          //   ),
-          // ),
-          const SideNavigationMenu(),
-          // Main content area
           Expanded(
             child: Container(
               padding: const EdgeInsets.all(32.0),
@@ -242,13 +291,13 @@ class StudentInfoFormScreenState extends State<StudentInfoFormScreen> {
                     icon: const Icon(Icons.arrow_downward),
                     elevation: 16,
                     style: const TextStyle(
-                      color: Colors.deepPurple,
+                      color: Colors.indigo,
                       fontFamily: 'Bauhaus',
                       fontSize: 16,
                     ),
                     underline: Container(
                       height: 2,
-                      color: Colors.deepPurpleAccent,
+                      color: Colors.indigoAccent,
                     ),
                     onChanged: (String? value) {
                       setState(() {
@@ -337,9 +386,9 @@ class StudentInfoFormScreenState extends State<StudentInfoFormScreen> {
                     child: ElevatedButton(
                       onPressed: _isLoading
                         ? null
-                        : () => _validateForm(context, widget.firstName, widget.lastName), // Button action
+                        : () => _validateForm(context, widget.firstName, widget.lastName, widget.settingsController), // Button action
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: const Color(0xFF0057B7), // Ukrainian flag blue
+                        backgroundColor: Colors.blue, // Ukrainian flag blue
                         padding: const EdgeInsets.symmetric(
                           horizontal: 24.0,
                           vertical: 12.0,

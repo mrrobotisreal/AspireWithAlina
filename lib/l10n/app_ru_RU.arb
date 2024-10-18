@@ -24,9 +24,25 @@
   "@common_firstName": {
     "description": "Метка для поля ввода имени."
   },
+  "common_games": "Games",
+  "@common_games": {
+    "description": "The label for the games screen."
+  },
+  "common_home": "Home",
+  "@common_home": {
+    "description": "The label for the home screen."
+  },
   "common_lastName": "Фамилия",
   "@common_lastName": {
     "description": "Метка для поля ввода фамилии."
+  },
+  "common_login": "Login",
+  "@common_login": {
+    "description": "The word \"Login\" that is used as a button label."
+  },
+  "common_logout": "Logout",
+  "@common_logout": {
+    "description": "The word \"Logout\" that is used as a button label."
   },
   "common_menuTitle": "Меню",
   "@common_menuTitle": {
@@ -176,6 +192,18 @@
   "welcomeScreen_serverError": "Ошибка сервера. Попробуйте еще раз позже.",
   "@welcomeScreen_serverError": {
     "description": "Сообщение об ошибке, которое отображается при возникновении ошибки сервера при входе в систему."
+  },
+  "welcomeScreen_snackbarSuccessfulLogin": "Successfully logged in!",
+  "@welcomeScreen_snackbarSuccessfulLogin": {
+    "description": "The message that is displayed when the user successfully logs in."
+  },
+  "welcomeScreen_snackbarSuccessfulLogout": "Successfully logged out!",
+  "@welcomeScreen_snackbarSuccessfulLogout": {
+    "description": "The message that is displayed when the user successfully logs out."
+  },
+  "welcomeScreen_snackbarSuccessfulRegistration": "Successfully redeemed registration code!",
+  "@welcomeScreen_snackbarSuccessfulRegistration": {
+    "description": "The message that is displayed when the registration code is successfully redeemed."
   },
   "welcomeScreen_welcomeTitle": "Добро пожаловать в...",
   "@welcomeScreen_welcomeTitle": {

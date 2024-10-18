@@ -24,9 +24,25 @@
   "@common_firstName": {
     "description": "O rótulo do campo de introdução do nome."
   },
+  "common_games": "Games",
+  "@common_games": {
+    "description": "The label for the games screen."
+  },
+  "common_home": "Home",
+  "@common_home": {
+    "description": "The label for the home screen."
+  },
   "common_lastName": "Apelido (nome de família)",
   "@common_lastName": {
     "description": "O rótulo do campo de introdução do apelido."
+  },
+  "common_login": "Login",
+  "@common_login": {
+    "description": "The word \"Login\" that is used as a button label."
+  },
+  "common_logout": "Logout",
+  "@common_logout": {
+    "description": "The word \"Logout\" that is used as a button label."
   },
   "common_menuTitle": "Menu",
   "@common_menuTitle": {
@@ -176,6 +192,18 @@
   "welcomeScreen_serverError": "Erro no servidor. Por favor, tente mais tarde.",
   "@welcomeScreen_serverError": {
     "description": "A mensagem de erro apresentada quando existe um erro no servidor durante o início de sessão."
+  },
+  "welcomeScreen_snackbarSuccessfulLogin": "Successfully logged in!",
+  "@welcomeScreen_snackbarSuccessfulLogin": {
+    "description": "The message that is displayed when the user successfully logs in."
+  },
+  "welcomeScreen_snackbarSuccessfulLogout": "Successfully logged out!",
+  "@welcomeScreen_snackbarSuccessfulLogout": {
+    "description": "The message that is displayed when the user successfully logs out."
+  },
+  "welcomeScreen_snackbarSuccessfulRegistration": "Successfully redeemed registration code!",
+  "@welcomeScreen_snackbarSuccessfulRegistration": {
+    "description": "The message that is displayed when the registration code is successfully redeemed."
   },
   "welcomeScreen_welcomeTitle": "Bem-vindo ao...",
   "@welcomeScreen_welcomeTitle": {
