@@ -60,8 +60,7 @@ class SideNavigationMenuState extends State<SideNavigationMenu> {
                 Navigator.pushNamed(context, '/home');
               },
             ),
-            ListTile(
-              iconColor: AppTheme.lightBodyTextColor,
+            ExpansionTile(
               leading: const Icon(Icons.games),
               title: Padding(
                 padding: const EdgeInsets.only(left: 10),
@@ -75,10 +74,66 @@ class SideNavigationMenuState extends State<SideNavigationMenu> {
                   ),
                 ),
               ),
-              onTap: () {
-                Navigator.pop(context);
-                Navigator.pushNamed(context, '/games');
-              },
+              children: [
+                ListTile(
+                  title: Padding(
+                    padding: const EdgeInsets.only(left: 15),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.games,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'All Games',
+                          style: const TextStyle(
+                            fontFamily: 'Bauhaus',
+                            color: AppTheme.lightBodyTextColor,
+                            // fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  onTap: () {
+                    Navigator.pop(context);
+                    Navigator.pushNamed(context, '/games');
+                  },
+                ),
+                ListTile(
+                  // iconColor: AppTheme.lightBodyTextColor,
+                  // leading: const Icon(Icons.rocket_launch),
+                  title: Padding(
+                    padding: const EdgeInsets.only(left: 15),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.rocket_launch,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'Space Shooter',
+                          style: const TextStyle(
+                            fontFamily: 'Bauhaus',
+                            color: AppTheme.lightBodyTextColor,
+                            // fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  onTap: () {
+                    Navigator.pop(context);
+                    Navigator.pushNamed(context, '/games/space-shooter');
+                  },
+                ),
+              ],
             ),
             ListTile(
               iconColor: AppTheme.lightBodyTextColor,
