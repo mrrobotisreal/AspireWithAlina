@@ -91,7 +91,6 @@ class SideNavigationMenuState extends State<SideNavigationMenu> {
                           style: TextStyle(
                             fontFamily: 'Bauhaus',
                             color: AppTheme.lightBodyTextColor,
-                            // fontWeight: FontWeight.bold,
                             fontSize: 18,
                           ),
                         ),
@@ -104,8 +103,6 @@ class SideNavigationMenuState extends State<SideNavigationMenu> {
                   },
                 ),
                 ListTile(
-                  // iconColor: AppTheme.lightBodyTextColor,
-                  // leading: const Icon(Icons.rocket_launch),
                   title: const Padding(
                     padding: EdgeInsets.only(left: 15),
                     child: Row(
@@ -121,7 +118,6 @@ class SideNavigationMenuState extends State<SideNavigationMenu> {
                           style: TextStyle(
                             fontFamily: 'Bauhaus',
                             color: AppTheme.lightBodyTextColor,
-                            // fontWeight: FontWeight.bold,
                             fontSize: 18,
                           ),
                         ),
