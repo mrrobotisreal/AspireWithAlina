@@ -7,7 +7,7 @@ import '../games/space_shooter.dart';
 
 class GamesScreen extends StatefulWidget {
   const GamesScreen({
-    Key? key,
+    super.key,
     required this.settingsController,
   });
 
@@ -57,7 +57,7 @@ class GamesScreenState extends State<GamesScreen> {
               ),
             ),
           ),
-          drawer: SideNavigationMenu(),
+          drawer: const SideNavigationMenu(),
           body: Row(
             children: [
               Expanded(
@@ -69,12 +69,12 @@ class GamesScreenState extends State<GamesScreen> {
                   color: Colors.white,
                   child: Column(
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.only(bottom: 16.0),
+                      const Padding(
+                        padding: EdgeInsets.only(bottom: 16.0),
                         child: Center(
                           child: Text(
                             'All Games',
-                            style: const TextStyle(
+                            style: TextStyle(
                               color: Colors.black,
                               fontFamily: 'Bauhaus',
                               fontWeight: FontWeight.bold,
@@ -90,7 +90,7 @@ class GamesScreenState extends State<GamesScreen> {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => SpaceShooterScreen(),
+                                  builder: (context) => const SpaceShooterScreen(),
                                 ),
                               );
                             },
@@ -100,7 +100,7 @@ class GamesScreenState extends State<GamesScreen> {
                                 vertical: 24.0,
                               ),
                             ),
-                            child: Row(
+                            child: const Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Icon(
@@ -111,7 +111,7 @@ class GamesScreenState extends State<GamesScreen> {
                                 SizedBox(width: 8),
                                 Text(
                                   'Space Shooter',
-                                  style: const TextStyle(
+                                  style: TextStyle(
                                     color: Colors.white,
                                     fontFamily: 'Bauhaus',
                                     fontWeight: FontWeight.bold,

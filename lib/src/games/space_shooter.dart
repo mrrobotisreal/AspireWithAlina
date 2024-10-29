@@ -5,7 +5,6 @@ import 'package:flame/game.dart';
 import 'package:flame/experimental.dart';
 import 'package:flame/events.dart';
 import 'package:flame/parallax.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 import '../navigation/side_navigation_menu.dart';
@@ -364,7 +363,7 @@ class SpaceShooterGame extends FlameGame with PanDetector, HasCollisionDetection
 
   void onEnemyDestroyed() {
     enemiesDestroyed += 1;
-    print('Enemies destroyed: ${enemiesDestroyed}');
+    print('Enemies destroyed: $enemiesDestroyed');
 
     if (onEnemyDestroyedCallback != null) {
       onEnemyDestroyedCallback!();
@@ -373,7 +372,7 @@ class SpaceShooterGame extends FlameGame with PanDetector, HasCollisionDetection
 
   void onAsteroidDestroyed() {
     enemiesDestroyed += 3;
-    print('Enemies destroyed: ${enemiesDestroyed}');
+    print('Enemies destroyed: $enemiesDestroyed');
 
     if (onEnemyDestroyedCallback != null) {
       onEnemyDestroyedCallback!();
@@ -382,7 +381,7 @@ class SpaceShooterGame extends FlameGame with PanDetector, HasCollisionDetection
 
   void onPlayerDestroyed() {
     remainingLives -= 1;
-    print('Remaining lives: ${remainingLives}');
+    print('Remaining lives: $remainingLives');
 
     if (onPlayerDestroyedCallback != null) {
       onPlayerDestroyedCallback!();
@@ -393,6 +392,8 @@ class SpaceShooterGame extends FlameGame with PanDetector, HasCollisionDetection
 class SpaceShooterScreen extends StatefulWidget {
   static const routeName = '/games/space-shooter';
 
+  const SpaceShooterScreen({super.key});
+
   @override
   SpaceShooterScreenState createState() => SpaceShooterScreenState();
 }
@@ -400,7 +401,7 @@ class SpaceShooterScreen extends StatefulWidget {
 class SpaceShooterScreenState extends State<SpaceShooterScreen> {
   late SpaceShooterGame _spaceShooterGame;
   var _remainingLivesIcons = [
-    Row(
+    const Row(
       children: [
         Image(
           image: AssetImage('assets/images/player-sprite.png'),
@@ -408,7 +409,7 @@ class SpaceShooterScreenState extends State<SpaceShooterScreen> {
         SizedBox(width: 10),
       ],
     ),
-    Row(
+    const Row(
       children: [
         Image(
           image: AssetImage('assets/images/player-sprite.png'),
@@ -416,7 +417,7 @@ class SpaceShooterScreenState extends State<SpaceShooterScreen> {
         SizedBox(width: 10),
       ],
     ),
-    Image(
+    const Image(
       image: AssetImage('assets/images/player-sprite.png'),
     ),
   ];
@@ -466,9 +467,9 @@ class SpaceShooterScreenState extends State<SpaceShooterScreen> {
       context: context,
       builder: (context) {
         return AlertDialog(
-          title: Text(
+          title: const Text(
             'Game Over!',
-            style: const TextStyle(
+            style: TextStyle(
               fontFamily: 'Bauhaus',
             ),
           ),
@@ -496,7 +497,7 @@ class SpaceShooterScreenState extends State<SpaceShooterScreen> {
                   remainingLives = 3;
                   _spaceShooterGame.remainingLives = 3;
                   _remainingLivesIcons = [
-                    Row(
+                    const Row(
                       children: [
                         Image(
                           image: AssetImage('assets/images/player-sprite.png'),
@@ -504,7 +505,7 @@ class SpaceShooterScreenState extends State<SpaceShooterScreen> {
                         SizedBox(width: 10),
                       ],
                     ),
-                    Row(
+                    const Row(
                       children: [
                         Image(
                           image: AssetImage('assets/images/player-sprite.png'),
@@ -512,7 +513,7 @@ class SpaceShooterScreenState extends State<SpaceShooterScreen> {
                         SizedBox(width: 10),
                       ],
                     ),
-                    Image(
+                    const Image(
                       image: AssetImage('assets/images/player-sprite.png'),
                     ),
                   ];
@@ -523,9 +524,9 @@ class SpaceShooterScreenState extends State<SpaceShooterScreen> {
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.blue,
               ),
-              child: Text(
+              child: const Text(
                 'Play Again',
-                style: const TextStyle(
+                style: TextStyle(
                   fontFamily: 'Bauhaus',
                   color: Colors.white,
                 ),
@@ -557,9 +558,9 @@ class SpaceShooterScreenState extends State<SpaceShooterScreen> {
             elevation: 24,
             backgroundColor: Colors.blue,
             iconTheme: const IconThemeData(color: Colors.white),
-            title: Text(
+            title: const Text(
               'Space Shooter',
-              style: const TextStyle(
+              style: TextStyle(
                 color: Colors.white,
                 fontFamily: 'Bauhaus',
                 fontWeight: FontWeight.bold,
@@ -599,7 +600,7 @@ class SpaceShooterScreenState extends State<SpaceShooterScreen> {
             ),
           ),
           Container(
-            padding: EdgeInsets.symmetric(
+            padding: const EdgeInsets.symmetric(
               vertical: 16.0,
               horizontal: 32.0,
             ),
@@ -610,7 +611,7 @@ class SpaceShooterScreenState extends State<SpaceShooterScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       'Lives: ',
                       style: TextStyle(
                         color: Colors.white,
@@ -618,7 +619,7 @@ class SpaceShooterScreenState extends State<SpaceShooterScreen> {
                         fontFamily: 'Bauhaus',
                       ),
                     ),
-                    SizedBox(width: 10),
+                    const SizedBox(width: 10),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: _remainingLivesIcons,
@@ -636,7 +637,7 @@ class SpaceShooterScreenState extends State<SpaceShooterScreen> {
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.blue,
                       ),
-                      child: Text(
+                      child: const Text(
                         'Reset Player',
                         style: TextStyle(
                           color: Colors.white,
@@ -645,14 +646,14 @@ class SpaceShooterScreenState extends State<SpaceShooterScreen> {
                         ),
                       ),
                     ),
-                    SizedBox(width: 20), // Space between buttons
+                    const SizedBox(width: 20), // Space between buttons
                     ElevatedButton(
                       onPressed: () {
                         setState(() {
                           enemiesDestroyed = 0;
                           remainingLives = 3;
                           _remainingLivesIcons = [
-                            Row(
+                            const Row(
                               children: [
                                 Image(
                                   image: AssetImage('assets/images/player-sprite.png'),
@@ -660,7 +661,7 @@ class SpaceShooterScreenState extends State<SpaceShooterScreen> {
                                 SizedBox(width: 10),
                               ],
                             ),
-                            Row(
+                            const Row(
                               children: [
                                 Image(
                                   image: AssetImage('assets/images/player-sprite.png'),
@@ -668,7 +669,7 @@ class SpaceShooterScreenState extends State<SpaceShooterScreen> {
                                 SizedBox(width: 10),
                               ],
                             ),
-                            Image(
+                            const Image(
                               image: AssetImage('assets/images/player-sprite.png'),
                             ),
                           ];
@@ -678,7 +679,7 @@ class SpaceShooterScreenState extends State<SpaceShooterScreen> {
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.blue,
                       ),
-                      child: Text(
+                      child: const Text(
                         'Reset Game',
                         style: TextStyle(
                           color: Colors.white,
@@ -692,7 +693,7 @@ class SpaceShooterScreenState extends State<SpaceShooterScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       'Enemies Destroyed: ',
                       style: TextStyle(
                         color: Colors.white,
@@ -700,10 +701,10 @@ class SpaceShooterScreenState extends State<SpaceShooterScreen> {
                         fontFamily: 'Bauhaus',
                       ),
                     ),
-                    SizedBox(width: 10),
+                    const SizedBox(width: 10),
                     Text(
                       '$enemiesDestroyed',
-                      style: TextStyle(
+                      style: const TextStyle(
                         color: Colors.green,
                         fontWeight: FontWeight.bold,
                         fontFamily: 'Bauhaus',

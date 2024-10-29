@@ -73,7 +73,7 @@ class AspireWithAlinaApp extends StatelessWidget {
                       settingsController: settingsController,
                     );
                   case SpaceShooterScreen.routeName:
-                    return SpaceShooterScreen();
+                    return const SpaceShooterScreen();
                   default:
                     return WelcomeScreen(
                       settingsController: settingsController,

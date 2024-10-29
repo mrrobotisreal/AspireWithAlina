@@ -76,8 +76,8 @@ class SideNavigationMenuState extends State<SideNavigationMenu> {
               ),
               children: [
                 ListTile(
-                  title: Padding(
-                    padding: const EdgeInsets.only(left: 15),
+                  title: const Padding(
+                    padding: EdgeInsets.only(left: 15),
                     child: Row(
                       children: [
                         Icon(
@@ -88,7 +88,7 @@ class SideNavigationMenuState extends State<SideNavigationMenu> {
                         ),
                         Text(
                           'All Games',
-                          style: const TextStyle(
+                          style: TextStyle(
                             fontFamily: 'Bauhaus',
                             color: AppTheme.lightBodyTextColor,
                             // fontWeight: FontWeight.bold,
@@ -106,8 +106,8 @@ class SideNavigationMenuState extends State<SideNavigationMenu> {
                 ListTile(
                   // iconColor: AppTheme.lightBodyTextColor,
                   // leading: const Icon(Icons.rocket_launch),
-                  title: Padding(
-                    padding: const EdgeInsets.only(left: 15),
+                  title: const Padding(
+                    padding: EdgeInsets.only(left: 15),
                     child: Row(
                       children: [
                         Icon(
@@ -118,7 +118,7 @@ class SideNavigationMenuState extends State<SideNavigationMenu> {
                         ),
                         Text(
                           'Space Shooter',
-                          style: const TextStyle(
+                          style: TextStyle(
                             fontFamily: 'Bauhaus',
                             color: AppTheme.lightBodyTextColor,
                             // fontWeight: FontWeight.bold,

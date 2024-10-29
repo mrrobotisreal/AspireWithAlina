@@ -86,22 +86,22 @@ class HomeScreenState extends State<HomeScreen> {
               Expanded(
                 child: Container(
                   padding: const EdgeInsets.all(32.0),
-                  child: Column(
+                  child: const Column(
                     children: [
                       Text(
                         'Home page',
-                        style: const TextStyle(
+                        style: TextStyle(
                           fontSize: 32,
                           fontWeight: FontWeight.bold,
                           fontFamily: 'Bauhaus',
                         ),
                       ),
-                      const SizedBox(
+                      SizedBox(
                         height: 8,
                       ),
                       Text(
                         'This is just some filler text to go here on the home page underneath the title in order to take up space so this can be used as an example. I hope this works!',
-                        style: const TextStyle(
+                        style: TextStyle(
                           fontSize: 16,
                           fontFamily: 'Bauhaus',
                         ),

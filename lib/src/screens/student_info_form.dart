@@ -218,9 +218,9 @@ class StudentInfoFormScreenState extends State<StudentInfoFormScreen> {
             elevation: 24,
             backgroundColor: Colors.blue,
             iconTheme: const IconThemeData(color: Colors.white),
-            title: Text(
+            title: const Text(
               'Student Info Form',
-              style: const TextStyle(
+              style: TextStyle(
                 color: Colors.white,
                 fontFamily: 'Bauhaus',
                 fontWeight: FontWeight.bold,
