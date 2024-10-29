@@ -60,6 +60,145 @@ class SideNavigationMenuState extends State<SideNavigationMenu> {
                 Navigator.pushNamed(context, '/home');
               },
             ),
+            ListTile(
+              iconColor: AppTheme.lightBodyTextColor,
+              leading: const Icon(Icons.school),
+              title: const Padding(
+                padding: const EdgeInsets.only(left: 10),
+                child: Text(
+                  'Classroom',
+                  style: const TextStyle(
+                    fontFamily: 'Bauhaus',
+                    color: AppTheme.lightBodyTextColor,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                  ),
+                ),
+              ),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.pushNamed(context, '/classroom');
+              },
+            ),
+            ListTile(
+              iconColor: AppTheme.lightBodyTextColor,
+              leading: const Icon(Icons.chat),
+              title: const Padding(
+                padding: EdgeInsets.only(left: 10),
+                child: Text(
+                  'Chat',
+                  style: const TextStyle(
+                    fontFamily: 'Bauhaus',
+                    color: AppTheme.lightBodyTextColor,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                  ),
+                ),
+              ),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.pushNamed(context, '/chat');
+              },
+            ),
+            ExpansionTile(
+              leading: const Icon(Icons.assignment),
+              title: const Padding(
+                padding: EdgeInsets.only(left: 10),
+                child: Text(
+                  // AppLocalizations.of(context)!.common_lessons,
+                  'Assignments',
+                  style: TextStyle(
+                    fontFamily: 'Bauhaus',
+                    color: AppTheme.lightBodyTextColor,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                  ),
+                ),
+              ),
+              children: [
+                ListTile(
+                  title: const Padding(
+                    padding: EdgeInsets.only(left: 15),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.assignment,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'All Assignments',
+                          style: TextStyle(
+                            fontFamily: 'Bauhaus',
+                            color: AppTheme.lightBodyTextColor,
+                            fontSize: 18,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  onTap: () {
+                    Navigator.pop(context);
+                    Navigator.pushNamed(context, '/assignments');
+                  },
+                ),
+                ListTile(
+                  title: const Padding(
+                    padding: EdgeInsets.only(left: 15),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.assignment_turned_in,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'Completed Assignments',
+                          style: TextStyle(
+                            fontFamily: 'Bauhaus',
+                            color: AppTheme.lightBodyTextColor,
+                            fontSize: 18,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  onTap: () {
+                    Navigator.pop(context);
+                    Navigator.pushNamed(context, '/assignments/completed');
+                  },
+                ),
+                ListTile(
+                  title: const Padding(
+                    padding: EdgeInsets.only(left: 15),
+                    child: Row(
+                      children: [
+                        Icon(
+                          Icons.assignment_late,
+                        ),
+                        SizedBox(
+                          width: 10,
+                        ),
+                        Text(
+                          'Current Assignments',
+                          style: TextStyle(
+                            fontFamily: 'Bauhaus',
+                            color: AppTheme.lightBodyTextColor,
+                            fontSize: 18,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  onTap: () {
+                    Navigator.pop(context);
+                    Navigator.pushNamed(context, '/assignments/current');
+                  },
+                ),
+              ],
+            ),
             ExpansionTile(
               leading: const Icon(Icons.games),
               title: Padding(
