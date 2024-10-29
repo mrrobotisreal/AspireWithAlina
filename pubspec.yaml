@@ -22,6 +22,10 @@ dependencies:
   crypt: ^4.3.1
   flame: ^1.21.0
   flutter_riverpod: ^2.6.1
+  googleapis: ^13.1.0
+  googleapis_auth: ^1.4.1
+  flutter_secure_storage: ^9.2.2
+  url_launcher: ^6.3.1
 
 dev_dependencies:
   flutter_test:
