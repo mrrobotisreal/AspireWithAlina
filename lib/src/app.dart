@@ -4,6 +4,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'home.dart';
 import 'games/space_shooter.dart';
+import 'screens/classroom.dart';
 import 'screens/games_screen.dart';
 import 'screens/welcome_screen.dart';
 import 'settings/settings_controller.dart';
@@ -68,6 +69,8 @@ class AspireWithAlinaApp extends StatelessWidget {
                       lastName: "",
                       email: "",
                     );
+                  case Classroom.routeName:
+                    return const Classroom();
                   case GamesScreen.routeName:
                     return GamesScreen(
                       settingsController: settingsController,
